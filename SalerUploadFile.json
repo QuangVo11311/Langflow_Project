@@ -1,0 +1,2350 @@
+{
+  "access_type": "PRIVATE",
+  "data": {
+    "edges": [
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ParseJSONData",
+            "id": "ParseJSONData-yBZo0",
+            "name": "filtered_data",
+            "output_types": [
+              "Data"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "ingest_data",
+            "id": "AstraDB-nKyHt",
+            "inputTypes": [
+              "Data",
+              "DataFrame"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__ParseJSONData-yBZo0{œdataTypeœ:œParseJSONDataœ,œidœ:œParseJSONData-yBZo0œ,œnameœ:œfiltered_dataœ,œoutput_typesœ:[œDataœ]}-AstraDB-nKyHt{œfieldNameœ:œingest_dataœ,œidœ:œAstraDB-nKyHtœ,œinputTypesœ:[œDataœ,œDataFrameœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "ParseJSONData-yBZo0",
+        "sourceHandle": "{œdataTypeœ:œParseJSONDataœ,œidœ:œParseJSONData-yBZo0œ,œnameœ:œfiltered_dataœ,œoutput_typesœ:[œDataœ]}",
+        "target": "AstraDB-nKyHt",
+        "targetHandle": "{œfieldNameœ:œingest_dataœ,œidœ:œAstraDB-nKyHtœ,œinputTypesœ:[œDataœ,œDataFrameœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "Agent",
+            "id": "Agent-gGvXo",
+            "name": "response",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "ChatOutput-1dkx7",
+            "inputTypes": [
+              "Data",
+              "DataFrame",
+              "Message"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__Agent-gGvXo{œdataTypeœ:œAgentœ,œidœ:œAgent-gGvXoœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-1dkx7{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-1dkx7œ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "Agent-gGvXo",
+        "sourceHandle": "{œdataTypeœ:œAgentœ,œidœ:œAgent-gGvXoœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ChatOutput-1dkx7",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-1dkx7œ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ChatOutput",
+            "id": "ChatOutput-1dkx7",
+            "name": "message",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "ParseJSONData-yBZo0",
+            "inputTypes": [
+              "Message",
+              "Data"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__ChatOutput-1dkx7{œdataTypeœ:œChatOutputœ,œidœ:œChatOutput-1dkx7œ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-ParseJSONData-yBZo0{œfieldNameœ:œinput_valueœ,œidœ:œParseJSONData-yBZo0œ,œinputTypesœ:[œMessageœ,œDataœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "ChatOutput-1dkx7",
+        "sourceHandle": "{œdataTypeœ:œChatOutputœ,œidœ:œChatOutput-1dkx7œ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ParseJSONData-yBZo0",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œParseJSONData-yBZo0œ,œinputTypesœ:[œMessageœ,œDataœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ChatInput",
+            "id": "ChatInput-lftMk",
+            "name": "message",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "Agent-gGvXo",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ChatInput-lftMk{œdataTypeœ:œChatInputœ,œidœ:œChatInput-lftMkœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-Agent-gGvXo{œfieldNameœ:œinput_valueœ,œidœ:œAgent-gGvXoœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ChatInput-lftMk",
+        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-lftMkœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Agent-gGvXo",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œAgent-gGvXoœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "description": "Get chat inputs from the Playground.",
+          "display_name": "Chat Input",
+          "id": "ChatInput-lftMk",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Get chat inputs from the Playground.",
+            "display_name": "Chat Input",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "input_value",
+              "should_store_message",
+              "sender",
+              "sender_name",
+              "session_id",
+              "files"
+            ],
+            "frozen": false,
+            "icon": "MessagesSquare",
+            "legacy": false,
+            "lf_version": "1.3.2",
+            "metadata": {},
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Message",
+                "method": "message_response",
+                "name": "message",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "background_color": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Background Color",
+                "dynamic": false,
+                "info": "The background color of the icon.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "load_from_db": false,
+                "name": "background_color",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "chat_icon": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Icon",
+                "dynamic": false,
+                "info": "The icon of the message.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "load_from_db": false,
+                "name": "chat_icon",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langflow.base.data.utils import IMG_FILE_TYPES, TEXT_FILE_TYPES\nfrom langflow.base.io.chat import ChatComponent\nfrom langflow.inputs import BoolInput\nfrom langflow.io import (\n    DropdownInput,\n    FileInput,\n    MessageTextInput,\n    MultilineInput,\n    Output,\n)\nfrom langflow.schema.message import Message\nfrom langflow.utils.constants import (\n    MESSAGE_SENDER_AI,\n    MESSAGE_SENDER_NAME_USER,\n    MESSAGE_SENDER_USER,\n)\n\n\nclass ChatInput(ChatComponent):\n    display_name = \"Chat Input\"\n    description = \"Get chat inputs from the Playground.\"\n    icon = \"MessagesSquare\"\n    name = \"ChatInput\"\n    minimized = True\n\n    inputs = [\n        MultilineInput(\n            name=\"input_value\",\n            display_name=\"Text\",\n            value=\"\",\n            info=\"Message to be passed as input.\",\n            input_types=[],\n        ),\n        BoolInput(\n            name=\"should_store_message\",\n            display_name=\"Store Messages\",\n            info=\"Store the message in the history.\",\n            value=True,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER],\n            value=MESSAGE_SENDER_USER,\n            info=\"Type of sender.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Name of the sender.\",\n            value=MESSAGE_SENDER_NAME_USER,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        FileInput(\n            name=\"files\",\n            display_name=\"Files\",\n            file_types=TEXT_FILE_TYPES + IMG_FILE_TYPES,\n            info=\"Files to be sent with the message.\",\n            advanced=True,\n            is_list=True,\n            temp_file=True,\n        ),\n        MessageTextInput(\n            name=\"background_color\",\n            display_name=\"Background Color\",\n            info=\"The background color of the icon.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"chat_icon\",\n            display_name=\"Icon\",\n            info=\"The icon of the message.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"text_color\",\n            display_name=\"Text Color\",\n            info=\"The text color of the name\",\n            advanced=True,\n        ),\n    ]\n    outputs = [\n        Output(display_name=\"Message\", name=\"message\", method=\"message_response\"),\n    ]\n\n    async def message_response(self) -> Message:\n        background_color = self.background_color\n        text_color = self.text_color\n        icon = self.chat_icon\n\n        message = await Message.create(\n            text=self.input_value,\n            sender=self.sender,\n            sender_name=self.sender_name,\n            session_id=self.session_id,\n            files=self.files,\n            properties={\n                \"background_color\": background_color,\n                \"text_color\": text_color,\n                \"icon\": icon,\n            },\n        )\n        if self.session_id and isinstance(message, Message) and self.should_store_message:\n            stored_message = await self.send_message(\n                message,\n            )\n            self.message.value = stored_message\n            message = stored_message\n\n        self.status = message\n        return message\n"
+              },
+              "files": {
+                "advanced": true,
+                "display_name": "Files",
+                "dynamic": false,
+                "fileTypes": [
+                  "txt",
+                  "md",
+                  "mdx",
+                  "csv",
+                  "json",
+                  "yaml",
+                  "yml",
+                  "xml",
+                  "html",
+                  "htm",
+                  "pdf",
+                  "docx",
+                  "py",
+                  "sh",
+                  "sql",
+                  "js",
+                  "ts",
+                  "tsx",
+                  "jpg",
+                  "jpeg",
+                  "png",
+                  "bmp",
+                  "image"
+                ],
+                "file_path": "",
+                "info": "Files to be sent with the message.",
+                "list": true,
+                "name": "files",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "temp_file": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "file",
+                "value": ""
+              },
+              "input_value": {
+                "advanced": false,
+                "display_name": "Text",
+                "dynamic": false,
+                "info": "Message to be passed as input.",
+                "input_types": [],
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "input_value",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Tôi muốn đăng bán 1 bất động sản có thông tin như sau: mã p011, Chung cư cao cấp, Chuỗi nhà ở cao cấp ngay giữa khu đô thị Gamuda Land hiện đại, Tân Phú, TP.HCM, giá 5000000000, có công viên, tiện ích đầy đủ, an ninh 24/7, gần trường học, kế bên Aeon Tân Phú. Liên hệ Trần Văn Quyền, 0934723722"
+              },
+              "sender": {
+                "advanced": true,
+                "display_name": "Sender Type",
+                "dynamic": false,
+                "info": "Type of sender.",
+                "name": "sender",
+                "options": [
+                  "Machine",
+                  "User"
+                ],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "User"
+              },
+              "sender_name": {
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "Name of the sender.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "load_from_db": false,
+                "name": "sender_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "User"
+              },
+              "session_id": {
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "should_store_message": {
+                "advanced": true,
+                "display_name": "Store Messages",
+                "dynamic": false,
+                "info": "Store the message in the history.",
+                "list": false,
+                "name": "should_store_message",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "text_color": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Text Color",
+                "dynamic": false,
+                "info": "The text color of the name",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "load_from_db": false,
+                "name": "text_color",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              }
+            }
+          },
+          "type": "ChatInput"
+        },
+        "dragging": false,
+        "height": 234,
+        "id": "ChatInput-lftMk",
+        "measured": {
+          "height": 234,
+          "width": 320
+        },
+        "position": {
+          "x": 2604.384434041262,
+          "y": 1090.849339821994
+        },
+        "positionAbsolute": {
+          "x": 743.9745420290319,
+          "y": 463.6977510207854
+        },
+        "selected": false,
+        "type": "genericNode",
+        "width": 320
+      },
+      {
+        "data": {
+          "id": "Agent-gGvXo",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "category": "agents",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Define the agent's instructions, then enter a task to complete using tools.",
+            "display_name": "Agent",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "agent_llm",
+              "max_tokens",
+              "model_kwargs",
+              "json_mode",
+              "model_name",
+              "openai_api_base",
+              "api_key",
+              "temperature",
+              "seed",
+              "max_retries",
+              "timeout",
+              "system_prompt",
+              "tools",
+              "input_value",
+              "handle_parsing_errors",
+              "verbose",
+              "max_iterations",
+              "agent_description",
+              "memory",
+              "sender",
+              "sender_name",
+              "n_messages",
+              "session_id",
+              "order",
+              "template",
+              "add_current_date_tool"
+            ],
+            "frozen": false,
+            "icon": "bot",
+            "key": "Agent",
+            "legacy": false,
+            "lf_version": "1.3.2",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Response",
+                "hidden": null,
+                "method": "message_response",
+                "name": "response",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "score": 5.283996070936036e-7,
+            "template": {
+              "_type": "Component",
+              "add_current_date_tool": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Current Date",
+                "dynamic": false,
+                "info": "If true, will add a tool to the agent that returns the current date.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "add_current_date_tool",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "agent_description": {
+                "_input_type": "MultilineInput",
+                "advanced": true,
+                "copy_field": false,
+                "display_name": "Agent Description [Deprecated]",
+                "dynamic": false,
+                "info": "The description of the agent. This is only used when in Tool Mode. Defaults to 'A helpful assistant with access to the following tools:' and tools are added dynamically. This feature is deprecated and will be removed in future versions.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "agent_description",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "A helpful assistant with access to the following tools:"
+              },
+              "agent_llm": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Model Provider",
+                "dynamic": false,
+                "info": "The provider of the language model that the agent will use to generate responses.",
+                "input_types": [],
+                "name": "agent_llm",
+                "options": [
+                  "Amazon Bedrock",
+                  "Anthropic",
+                  "Azure OpenAI",
+                  "Google Generative AI",
+                  "Groq",
+                  "NVIDIA",
+                  "OpenAI",
+                  "SambaNova",
+                  "Custom"
+                ],
+                "options_metadata": [
+                  {
+                    "icon": "Amazon"
+                  },
+                  {
+                    "icon": "Anthropic"
+                  },
+                  {
+                    "icon": "Azure"
+                  },
+                  {
+                    "icon": "GoogleGenerativeAI"
+                  },
+                  {
+                    "icon": "Groq"
+                  },
+                  {
+                    "icon": "NVIDIA"
+                  },
+                  {
+                    "icon": "OpenAI"
+                  },
+                  {
+                    "icon": "SambaNova"
+                  },
+                  {
+                    "icon": "brain"
+                  }
+                ],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Google Generative AI"
+              },
+              "api_key": {
+                "_input_type": "SecretStrInput",
+                "advanced": false,
+                "display_name": "Google API Key",
+                "dynamic": false,
+                "info": "The Google API Key to use for the Google Generative AI.",
+                "input_types": [
+                  "Message"
+                ],
+                "load_from_db": true,
+                "name": "api_key",
+                "password": true,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": "Gemini API"
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "input_types": [],
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langchain_core.tools import StructuredTool\n\nfrom langflow.base.agents.agent import LCToolsAgentComponent\nfrom langflow.base.agents.events import ExceptionWithMessageError\nfrom langflow.base.models.model_input_constants import (\n    ALL_PROVIDER_FIELDS,\n    MODEL_DYNAMIC_UPDATE_FIELDS,\n    MODEL_PROVIDERS_DICT,\n    MODELS_METADATA,\n)\nfrom langflow.base.models.model_utils import get_model_name\nfrom langflow.components.helpers import CurrentDateComponent\nfrom langflow.components.helpers.memory import MemoryComponent\nfrom langflow.components.langchain_utilities.tool_calling import ToolCallingAgentComponent\nfrom langflow.custom.utils import update_component_build_config\nfrom langflow.io import BoolInput, DropdownInput, MultilineInput, Output\nfrom langflow.logging import logger\nfrom langflow.schema.dotdict import dotdict\nfrom langflow.schema.message import Message\n\n\ndef set_advanced_true(component_input):\n    component_input.advanced = True\n    return component_input\n\n\nclass AgentComponent(ToolCallingAgentComponent):\n    display_name: str = \"Agent\"\n    description: str = \"Define the agent's instructions, then enter a task to complete using tools.\"\n    icon = \"bot\"\n    beta = False\n    name = \"Agent\"\n\n    memory_inputs = [set_advanced_true(component_input) for component_input in MemoryComponent().inputs]\n\n    inputs = [\n        DropdownInput(\n            name=\"agent_llm\",\n            display_name=\"Model Provider\",\n            info=\"The provider of the language model that the agent will use to generate responses.\",\n            options=[*sorted(MODEL_PROVIDERS_DICT.keys()), \"Custom\"],\n            value=\"OpenAI\",\n            real_time_refresh=True,\n            input_types=[],\n            options_metadata=[MODELS_METADATA[key] for key in sorted(MODELS_METADATA.keys())] + [{\"icon\": \"brain\"}],\n        ),\n        *MODEL_PROVIDERS_DICT[\"OpenAI\"][\"inputs\"],\n        MultilineInput(\n            name=\"system_prompt\",\n            display_name=\"Agent Instructions\",\n            info=\"System Prompt: Initial instructions and context provided to guide the agent's behavior.\",\n            value=\"You are a helpful assistant that can use tools to answer questions and perform tasks.\",\n            advanced=False,\n        ),\n        *LCToolsAgentComponent._base_inputs,\n        *memory_inputs,\n        BoolInput(\n            name=\"add_current_date_tool\",\n            display_name=\"Current Date\",\n            advanced=True,\n            info=\"If true, will add a tool to the agent that returns the current date.\",\n            value=True,\n        ),\n    ]\n    outputs = [Output(name=\"response\", display_name=\"Response\", method=\"message_response\")]\n\n    async def message_response(self) -> Message:\n        try:\n            # Get LLM model and validate\n            llm_model, display_name = self.get_llm()\n            if llm_model is None:\n                msg = \"No language model selected. Please choose a model to proceed.\"\n                raise ValueError(msg)\n            self.model_name = get_model_name(llm_model, display_name=display_name)\n\n            # Get memory data\n            self.chat_history = await self.get_memory_data()\n\n            # Add current date tool if enabled\n            if self.add_current_date_tool:\n                if not isinstance(self.tools, list):  # type: ignore[has-type]\n                    self.tools = []\n                current_date_tool = (await CurrentDateComponent(**self.get_base_args()).to_toolkit()).pop(0)\n                if not isinstance(current_date_tool, StructuredTool):\n                    msg = \"CurrentDateComponent must be converted to a StructuredTool\"\n                    raise TypeError(msg)\n                self.tools.append(current_date_tool)\n\n            # Validate tools\n            if not self.tools:\n                msg = \"Tools are required to run the agent. Please add at least one tool.\"\n                raise ValueError(msg)\n\n            # Set up and run agent\n            self.set(\n                llm=llm_model,\n                tools=self.tools,\n                chat_history=self.chat_history,\n                input_value=self.input_value,\n                system_prompt=self.system_prompt,\n            )\n            agent = self.create_agent_runnable()\n            return await self.run_agent(agent)\n\n        except (ValueError, TypeError, KeyError) as e:\n            logger.error(f\"{type(e).__name__}: {e!s}\")\n            raise\n        except ExceptionWithMessageError as e:\n            logger.error(f\"ExceptionWithMessageError occurred: {e}\")\n            raise\n        except Exception as e:\n            logger.error(f\"Unexpected error: {e!s}\")\n            raise\n\n    async def get_memory_data(self):\n        memory_kwargs = {\n            component_input.name: getattr(self, f\"{component_input.name}\") for component_input in self.memory_inputs\n        }\n        # filter out empty values\n        memory_kwargs = {k: v for k, v in memory_kwargs.items() if v}\n\n        return await MemoryComponent(**self.get_base_args()).set(**memory_kwargs).retrieve_messages()\n\n    def get_llm(self):\n        if not isinstance(self.agent_llm, str):\n            return self.agent_llm, None\n\n        try:\n            provider_info = MODEL_PROVIDERS_DICT.get(self.agent_llm)\n            if not provider_info:\n                msg = f\"Invalid model provider: {self.agent_llm}\"\n                raise ValueError(msg)\n\n            component_class = provider_info.get(\"component_class\")\n            display_name = component_class.display_name\n            inputs = provider_info.get(\"inputs\")\n            prefix = provider_info.get(\"prefix\", \"\")\n\n            return self._build_llm_model(component_class, inputs, prefix), display_name\n\n        except Exception as e:\n            logger.error(f\"Error building {self.agent_llm} language model: {e!s}\")\n            msg = f\"Failed to initialize language model: {e!s}\"\n            raise ValueError(msg) from e\n\n    def _build_llm_model(self, component, inputs, prefix=\"\"):\n        model_kwargs = {input_.name: getattr(self, f\"{prefix}{input_.name}\") for input_ in inputs}\n        return component.set(**model_kwargs).build_model()\n\n    def set_component_params(self, component):\n        provider_info = MODEL_PROVIDERS_DICT.get(self.agent_llm)\n        if provider_info:\n            inputs = provider_info.get(\"inputs\")\n            prefix = provider_info.get(\"prefix\")\n            model_kwargs = {input_.name: getattr(self, f\"{prefix}{input_.name}\") for input_ in inputs}\n\n            return component.set(**model_kwargs)\n        return component\n\n    def delete_fields(self, build_config: dotdict, fields: dict | list[str]) -> None:\n        \"\"\"Delete specified fields from build_config.\"\"\"\n        for field in fields:\n            build_config.pop(field, None)\n\n    def update_input_types(self, build_config: dotdict) -> dotdict:\n        \"\"\"Update input types for all fields in build_config.\"\"\"\n        for key, value in build_config.items():\n            if isinstance(value, dict):\n                if value.get(\"input_types\") is None:\n                    build_config[key][\"input_types\"] = []\n            elif hasattr(value, \"input_types\") and value.input_types is None:\n                value.input_types = []\n        return build_config\n\n    async def update_build_config(\n        self, build_config: dotdict, field_value: str, field_name: str | None = None\n    ) -> dotdict:\n        # Iterate over all providers in the MODEL_PROVIDERS_DICT\n        # Existing logic for updating build_config\n        if field_name in (\"agent_llm\",):\n            build_config[\"agent_llm\"][\"value\"] = field_value\n            provider_info = MODEL_PROVIDERS_DICT.get(field_value)\n            if provider_info:\n                component_class = provider_info.get(\"component_class\")\n                if component_class and hasattr(component_class, \"update_build_config\"):\n                    # Call the component class's update_build_config method\n                    build_config = await update_component_build_config(\n                        component_class, build_config, field_value, \"model_name\"\n                    )\n\n            provider_configs: dict[str, tuple[dict, list[dict]]] = {\n                provider: (\n                    MODEL_PROVIDERS_DICT[provider][\"fields\"],\n                    [\n                        MODEL_PROVIDERS_DICT[other_provider][\"fields\"]\n                        for other_provider in MODEL_PROVIDERS_DICT\n                        if other_provider != provider\n                    ],\n                )\n                for provider in MODEL_PROVIDERS_DICT\n            }\n            if field_value in provider_configs:\n                fields_to_add, fields_to_delete = provider_configs[field_value]\n\n                # Delete fields from other providers\n                for fields in fields_to_delete:\n                    self.delete_fields(build_config, fields)\n\n                # Add provider-specific fields\n                if field_value == \"OpenAI\" and not any(field in build_config for field in fields_to_add):\n                    build_config.update(fields_to_add)\n                else:\n                    build_config.update(fields_to_add)\n                # Reset input types for agent_llm\n                build_config[\"agent_llm\"][\"input_types\"] = []\n            elif field_value == \"Custom\":\n                # Delete all provider fields\n                self.delete_fields(build_config, ALL_PROVIDER_FIELDS)\n                # Update with custom component\n                custom_component = DropdownInput(\n                    name=\"agent_llm\",\n                    display_name=\"Language Model\",\n                    options=[*sorted(MODEL_PROVIDERS_DICT.keys()), \"Custom\"],\n                    value=\"Custom\",\n                    real_time_refresh=True,\n                    input_types=[\"LanguageModel\"],\n                    options_metadata=[MODELS_METADATA[key] for key in sorted(MODELS_METADATA.keys())]\n                    + [{\"icon\": \"brain\"}],\n                )\n                build_config.update({\"agent_llm\": custom_component.to_dict()})\n            # Update input types for all fields\n            build_config = self.update_input_types(build_config)\n\n            # Validate required keys\n            default_keys = [\n                \"code\",\n                \"_type\",\n                \"agent_llm\",\n                \"tools\",\n                \"input_value\",\n                \"add_current_date_tool\",\n                \"system_prompt\",\n                \"agent_description\",\n                \"max_iterations\",\n                \"handle_parsing_errors\",\n                \"verbose\",\n            ]\n            missing_keys = [key for key in default_keys if key not in build_config]\n            if missing_keys:\n                msg = f\"Missing required keys in build_config: {missing_keys}\"\n                raise ValueError(msg)\n        if (\n            isinstance(self.agent_llm, str)\n            and self.agent_llm in MODEL_PROVIDERS_DICT\n            and field_name in MODEL_DYNAMIC_UPDATE_FIELDS\n        ):\n            provider_info = MODEL_PROVIDERS_DICT.get(self.agent_llm)\n            if provider_info:\n                component_class = provider_info.get(\"component_class\")\n                component_class = self.set_component_params(component_class)\n                prefix = provider_info.get(\"prefix\")\n                if component_class and hasattr(component_class, \"update_build_config\"):\n                    # Call each component class's update_build_config method\n                    # remove the prefix from the field_name\n                    if isinstance(field_name, str) and isinstance(prefix, str):\n                        field_name = field_name.replace(prefix, \"\")\n                    build_config = await update_component_build_config(\n                        component_class, build_config, field_value, \"model_name\"\n                    )\n        return dotdict({k: v.to_dict() if hasattr(v, \"to_dict\") else v for k, v in build_config.items()})\n"
+              },
+              "handle_parsing_errors": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Handle Parse Errors",
+                "dynamic": false,
+                "info": "Should the Agent fix errors when reading user input for better processing?",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "handle_parsing_errors",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "input_value": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Input",
+                "dynamic": false,
+                "info": "The input provided by the user for the agent to process.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "input_value",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "max_iterations": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max Iterations",
+                "dynamic": false,
+                "info": "The maximum number of attempts the agent can make to complete its task before it stops.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_iterations",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 15
+              },
+              "max_output_tokens": {
+                "_input_type": "IntInput",
+                "advanced": false,
+                "display_name": "Max Output Tokens",
+                "dynamic": false,
+                "info": "The maximum number of tokens to generate.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_output_tokens",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": ""
+              },
+              "memory": {
+                "_input_type": "HandleInput",
+                "advanced": true,
+                "display_name": "External Memory",
+                "dynamic": false,
+                "info": "Retrieve messages from an external memory. If empty, it will use the Langflow tables.",
+                "input_types": [
+                  "Memory"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "memory",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "model_name": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": true,
+                "dialog_inputs": {},
+                "display_name": "Model",
+                "dynamic": false,
+                "info": "To see the model names, first choose a provider. Then, enter your API key and click the refresh button next to the model name.",
+                "input_types": [],
+                "name": "model_name",
+                "options": [
+                  "learnlm-2.0-flash-experimental",
+                  "learnlm-1.5-pro-experimental",
+                  "gemma-3-4b-it",
+                  "gemma-3-27b-it",
+                  "gemma-3-1b-it",
+                  "gemma-3-12b-it",
+                  "gemini-pro-vision",
+                  "gemini-exp-1206",
+                  "gemini-2.5-pro-preview-03-25",
+                  "gemini-2.5-pro-exp-03-25",
+                  "gemini-2.5-flash-preview-04-17",
+                  "gemini-2.0-pro-exp-02-05",
+                  "gemini-2.0-pro-exp",
+                  "gemini-2.0-flash-thinking-exp-1219",
+                  "gemini-2.0-flash-thinking-exp-01-21",
+                  "gemini-2.0-flash-thinking-exp",
+                  "gemini-2.0-flash-lite-preview-02-05",
+                  "gemini-2.0-flash-lite-preview",
+                  "gemini-2.0-flash-lite-001",
+                  "gemini-2.0-flash-lite",
+                  "gemini-2.0-flash-exp-image-generation",
+                  "gemini-2.0-flash-exp",
+                  "gemini-2.0-flash-001",
+                  "gemini-2.0-flash",
+                  "gemini-1.5-pro-latest",
+                  "gemini-1.5-pro-002",
+                  "gemini-1.5-pro-001",
+                  "gemini-1.5-pro",
+                  "gemini-1.5-flash-latest",
+                  "gemini-1.5-flash-8b-latest",
+                  "gemini-1.5-flash-8b-exp-0924",
+                  "gemini-1.5-flash-8b-exp-0827",
+                  "gemini-1.5-flash-8b-001",
+                  "gemini-1.5-flash-8b",
+                  "gemini-1.5-flash-002",
+                  "gemini-1.5-flash-001-tuning",
+                  "gemini-1.5-flash-001",
+                  "gemini-1.5-flash",
+                  "gemini-1.0-pro-vision-latest"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "real_time_refresh": false,
+                "refresh_button": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "learnlm-2.0-flash-experimental"
+              },
+              "n": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "N",
+                "dynamic": false,
+                "info": "Number of chat completions to generate for each prompt. Note that the API may not return the full n completions if duplicates are generated.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "n",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": ""
+              },
+              "n_messages": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Number of Messages",
+                "dynamic": false,
+                "info": "Number of messages to retrieve.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "n_messages",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 100
+              },
+              "order": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Order",
+                "dynamic": false,
+                "info": "Order of the messages.",
+                "input_types": [],
+                "name": "order",
+                "options": [
+                  "Ascending",
+                  "Descending"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Ascending"
+              },
+              "sender": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Sender Type",
+                "dynamic": false,
+                "info": "Filter by sender type.",
+                "input_types": [],
+                "name": "sender",
+                "options": [
+                  "Machine",
+                  "User",
+                  "Machine and User"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Machine and User"
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "Filter by sender name.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "system_prompt": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Agent Instructions",
+                "dynamic": false,
+                "info": "System Prompt: Initial instructions and context provided to guide the agent's behavior.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "system_prompt",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "You are a skilled customer service manager and information router in the real estate domain. Your primary responsibility is to use available tools to retrieve and deliver detailed, accurate, and helpful information based on the user's request.\n\nExtract real estate information from the input text and return it as a valid JSON object with the following structure:\n\nproperty_id\ntitle\ndescription\nprice\nlocation\nfeatures\ncontact\nname\nphone\nemail\ncreated_at: \"YYYY-MM-DD HH:mm:ss\"\n\nRules:\nIf any required field is missing, ask the user a short and clear follow-up question to complete the data.\nThe contact field must contain at least one of phone or email. If both are missing, do not complete the data—ask the user to provide at least one.\nThe created_at field must be automatically generated based on the current date and time in the format YYYY-MM-DD HH:mm:ss.\nPreserve the original language of the input text (support Vietnamese characters).\nOutput must be only a valid JSON object or a follow-up question. Do not include any explanation or extra text.\n\nInput:\n{input}\n\nOutput:"
+              },
+              "temperature": {
+                "_input_type": "SliderInput",
+                "advanced": true,
+                "display_name": "Temperature",
+                "dynamic": false,
+                "info": "Controls randomness. Lower values are more deterministic, higher values are more creative.",
+                "input_types": [],
+                "max_label": "",
+                "max_label_icon": "",
+                "min_label": "",
+                "min_label_icon": "",
+                "name": "temperature",
+                "placeholder": "",
+                "range_spec": {
+                  "max": 2,
+                  "min": 0,
+                  "step": 0.01,
+                  "step_type": "float"
+                },
+                "required": false,
+                "show": true,
+                "slider_buttons": false,
+                "slider_buttons_options": [],
+                "slider_input": false,
+                "title_case": false,
+                "tool_mode": false,
+                "type": "slider",
+                "value": 0.1
+              },
+              "template": {
+                "_input_type": "MultilineInput",
+                "advanced": true,
+                "copy_field": false,
+                "display_name": "Template",
+                "dynamic": false,
+                "info": "The template to use for formatting the data. It can contain the keys {text}, {sender} or any other key in the message data.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "template",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "{sender_name}: {text}"
+              },
+              "tool_model_enabled": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Tool Model Enabled",
+                "dynamic": false,
+                "info": "Whether to use the tool model.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "tool_model_enabled",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              },
+              "tools": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Tools",
+                "dynamic": false,
+                "info": "These are the tools that the agent can use to help with tasks.",
+                "input_types": [
+                  "Tool"
+                ],
+                "list": true,
+                "list_add_label": "Add More",
+                "name": "tools",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "top_k": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Top K",
+                "dynamic": false,
+                "info": "Decode using top-k sampling: consider the set of top_k most probable tokens. Must be positive.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "top_k",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": ""
+              },
+              "top_p": {
+                "_input_type": "FloatInput",
+                "advanced": true,
+                "display_name": "Top P",
+                "dynamic": false,
+                "info": "The maximum cumulative probability of tokens to consider when sampling.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "top_p",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "float",
+                "value": ""
+              },
+              "verbose": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Verbose",
+                "dynamic": false,
+                "info": "",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "verbose",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "Agent"
+        },
+        "dragging": false,
+        "id": "Agent-gGvXo",
+        "measured": {
+          "height": 706,
+          "width": 320
+        },
+        "position": {
+          "x": 2963.6063180794654,
+          "y": 613.6309065738003
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "AstraDB-nKyHt",
+          "node": {
+            "base_classes": [
+              "Data",
+              "DataFrame",
+              "VectorStore"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Ingest and search documents in Astra DB",
+            "display_name": "Astra DB",
+            "documentation": "https://docs.datastax.com/en/langflow/astra-components.html",
+            "edited": true,
+            "field_order": [
+              "token",
+              "environment",
+              "database_name",
+              "api_endpoint",
+              "collection_name",
+              "keyspace",
+              "embedding_choice",
+              "embedding_model",
+              "ingest_data",
+              "search_query",
+              "should_cache_vector_store",
+              "number_of_results",
+              "search_type",
+              "search_score_threshold",
+              "advanced_search_filter",
+              "autodetect_collection",
+              "content_field",
+              "deletion_field",
+              "ignore_invalid_documents",
+              "astradb_vectorstore_kwargs"
+            ],
+            "frozen": false,
+            "icon": "AstraDB",
+            "legacy": false,
+            "lf_version": "1.3.2",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Search Results",
+                "hidden": null,
+                "method": "search_documents",
+                "name": "search_results",
+                "options": null,
+                "required_inputs": [
+                  "collection_name",
+                  "database_name",
+                  "token"
+                ],
+                "selected": "Data",
+                "tool_mode": true,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "DataFrame",
+                "hidden": null,
+                "method": "as_dataframe",
+                "name": "dataframe",
+                "options": null,
+                "required_inputs": [],
+                "selected": "DataFrame",
+                "tool_mode": true,
+                "types": [
+                  "DataFrame"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Vector Store Connection",
+                "hidden": true,
+                "method": "as_vector_store",
+                "name": "vectorstoreconnection",
+                "options": null,
+                "required_inputs": null,
+                "selected": "VectorStore",
+                "tool_mode": true,
+                "types": [
+                  "VectorStore"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "advanced_search_filter": {
+                "_input_type": "NestedDictInput",
+                "advanced": true,
+                "display_name": "Search Metadata Filter",
+                "dynamic": false,
+                "info": "Optional dictionary of filters to apply to the search query.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "advanced_search_filter",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "NestedDict",
+                "value": {}
+              },
+              "api_endpoint": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Astra DB API Endpoint",
+                "dynamic": false,
+                "info": "The API Endpoint for the Astra DB instance. Supercedes database selection.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "api_endpoint",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "https://200bd7a0-d6b7-4f07-95e6-d57d73ba5879-us-east-2.apps.astra.datastax.com"
+              },
+              "astradb_vectorstore_kwargs": {
+                "_input_type": "NestedDictInput",
+                "advanced": true,
+                "display_name": "AstraDBVectorStore Parameters",
+                "dynamic": false,
+                "info": "Optional dictionary of additional parameters for the AstraDBVectorStore.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "astradb_vectorstore_kwargs",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "NestedDict",
+                "value": {}
+              },
+              "autodetect_collection": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Autodetect Collection",
+                "dynamic": false,
+                "info": "Boolean flag to determine whether to autodetect the collection.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "autodetect_collection",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import re\r\nfrom collections import defaultdict\r\nfrom dataclasses import asdict, dataclass, field\r\n\r\nfrom astrapy import AstraDBAdmin, DataAPIClient, Database\r\nfrom astrapy.info import CollectionDescriptor\r\nfrom langchain_astradb import AstraDBVectorStore, CollectionVectorServiceOptions\r\n\r\nfrom langflow.base.vectorstores.model import LCVectorStoreComponent, check_cached_vector_store\r\nfrom langflow.base.vectorstores.vector_store_connection_decorator import vector_store_connection\r\nfrom langflow.helpers import docs_to_data\r\nfrom langflow.inputs import FloatInput, NestedDictInput\r\nfrom langflow.io import (\r\n    BoolInput,\r\n    DropdownInput,\r\n    HandleInput,\r\n    IntInput,\r\n    SecretStrInput,\r\n    StrInput,\r\n)\r\nfrom langflow.schema import Data\r\nfrom langflow.utils.version import get_version_info\r\n\r\n\r\n@vector_store_connection\r\nclass AstraDBVectorStoreComponent(LCVectorStoreComponent):\r\n    display_name: str = \"Astra DB\"\r\n    description: str = \"Ingest and search documents in Astra DB\"\r\n    documentation: str = \"https://docs.datastax.com/en/langflow/astra-components.html\"\r\n    name = \"AstraDB\"\r\n    icon: str = \"AstraDB\"\r\n\r\n    _cached_vector_store: AstraDBVectorStore | None = None\r\n\r\n    @dataclass\r\n    class NewDatabaseInput:\r\n        functionality: str = \"create\"\r\n        fields: dict[str, dict] = field(\r\n            default_factory=lambda: {\r\n                \"data\": {\r\n                    \"node\": {\r\n                        \"name\": \"create_database\",\r\n                        \"description\": \"Please allow several minutes for creation to complete.\",\r\n                        \"display_name\": \"Create new database\",\r\n                        \"field_order\": [\"01_new_database_name\", \"02_cloud_provider\", \"03_region\"],\r\n                        \"template\": {\r\n                            \"01_new_database_name\": StrInput(\r\n                                name=\"new_database_name\",\r\n                                display_name=\"Name\",\r\n                                info=\"Name of the new database to create in Astra DB.\",\r\n                                required=True,\r\n                            ),\r\n                            \"02_cloud_provider\": DropdownInput(\r\n                                name=\"cloud_provider\",\r\n                                display_name=\"Cloud provider\",\r\n                                info=\"Cloud provider for the new database.\",\r\n                                options=[],\r\n                                required=True,\r\n                                real_time_refresh=True,\r\n                            ),\r\n                            \"03_region\": DropdownInput(\r\n                                name=\"region\",\r\n                                display_name=\"Region\",\r\n                                info=\"Region for the new database.\",\r\n                                options=[],\r\n                                required=True,\r\n                            ),\r\n                        },\r\n                    },\r\n                }\r\n            }\r\n        )\r\n\r\n    @dataclass\r\n    class NewCollectionInput:\r\n        functionality: str = \"create\"\r\n        fields: dict[str, dict] = field(\r\n            default_factory=lambda: {\r\n                \"data\": {\r\n                    \"node\": {\r\n                        \"name\": \"create_collection\",\r\n                        \"description\": \"Please allow several seconds for creation to complete.\",\r\n                        \"display_name\": \"Create new collection\",\r\n                        \"field_order\": [\r\n                            \"01_new_collection_name\",\r\n                            \"02_embedding_generation_provider\",\r\n                            \"03_embedding_generation_model\",\r\n                            \"04_dimension\",\r\n                        ],\r\n                        \"template\": {\r\n                            \"01_new_collection_name\": StrInput(\r\n                                name=\"new_collection_name\",\r\n                                display_name=\"Name\",\r\n                                info=\"Name of the new collection to create in Astra DB.\",\r\n                                required=True,\r\n                            ),\r\n                            \"02_embedding_generation_provider\": DropdownInput(\r\n                                name=\"embedding_generation_provider\",\r\n                                display_name=\"Embedding generation method\",\r\n                                info=\"Provider to use for generating embeddings.\",\r\n                                helper_text=(\r\n                                    \"To create collections with more embedding provider options, go to \"\r\n                                    '<a class=\"underline\" href=\"https://astra.datastax.com/\" target=\" _blank\" '\r\n                                    'rel=\"noopener noreferrer\">your database in Astra DB</a>'\r\n                                ),\r\n                                real_time_refresh=True,\r\n                                required=True,\r\n                                options=[],\r\n                            ),\r\n                            \"03_embedding_generation_model\": DropdownInput(\r\n                                name=\"embedding_generation_model\",\r\n                                display_name=\"Embedding model\",\r\n                                info=\"Model to use for generating embeddings.\",\r\n                                real_time_refresh=True,\r\n                                options=[],\r\n                            ),\r\n                            \"04_dimension\": IntInput(\r\n                                name=\"dimension\",\r\n                                display_name=\"Dimensions\",\r\n                                info=\"Dimensions of the embeddings to generate.\",\r\n                                value=None,\r\n                            ),\r\n                        },\r\n                    },\r\n                }\r\n            }\r\n        )\r\n\r\n    inputs = [\r\n        SecretStrInput(\r\n            name=\"token\",\r\n            display_name=\"Astra DB Application Token\",\r\n            info=\"Authentication token for accessing Astra DB.\",\r\n            value=\"ASTRA_DB_APPLICATION_TOKEN\",\r\n            required=True,\r\n            real_time_refresh=True,\r\n            input_types=[],\r\n        ),\r\n        StrInput(\r\n            name=\"environment\",\r\n            display_name=\"Environment\",\r\n            info=\"The environment for the Astra DB API Endpoint.\",\r\n            advanced=True,\r\n            real_time_refresh=True,\r\n        ),\r\n        DropdownInput(\r\n            name=\"database_name\",\r\n            display_name=\"Database\",\r\n            info=\"The Database name for the Astra DB instance.\",\r\n            required=True,\r\n            refresh_button=True,\r\n            real_time_refresh=True,\r\n            dialog_inputs=asdict(NewDatabaseInput()),\r\n            combobox=True,\r\n        ),\r\n        StrInput(\r\n            name=\"api_endpoint\",\r\n            display_name=\"Astra DB API Endpoint\",\r\n            info=\"The API Endpoint for the Astra DB instance. Supercedes database selection.\",\r\n            advanced=True,\r\n        ),\r\n        DropdownInput(\r\n            name=\"collection_name\",\r\n            display_name=\"Collection\",\r\n            info=\"The name of the collection within Astra DB where the vectors will be stored.\",\r\n            required=True,\r\n            refresh_button=True,\r\n            real_time_refresh=True,\r\n            dialog_inputs=asdict(NewCollectionInput()),\r\n            combobox=True,\r\n            advanced=True,\r\n        ),\r\n        StrInput(\r\n            name=\"keyspace\",\r\n            display_name=\"Keyspace\",\r\n            info=\"Optional keyspace within Astra DB to use for the collection.\",\r\n            advanced=True,\r\n        ),\r\n        DropdownInput(\r\n            name=\"embedding_choice\",\r\n            display_name=\"Embedding Model or Astra Vectorize\",\r\n            info=\"Choose an embedding model or use Astra Vectorize.\",\r\n            options=[\"Embedding Model\", \"Astra Vectorize\"],\r\n            value=\"Embedding Model\",\r\n            advanced=True,\r\n            real_time_refresh=True,\r\n        ),\r\n        HandleInput(\r\n            name=\"embedding_model\",\r\n            display_name=\"Embedding Model\",\r\n            input_types=[\"Embeddings\"],\r\n            info=\"Specify the Embedding Model. Not required for Astra Vectorize collections.\",\r\n            required=False,\r\n        ),\r\n        *LCVectorStoreComponent.inputs,\r\n        IntInput(\r\n            name=\"number_of_results\",\r\n            display_name=\"Number of Search Results\",\r\n            info=\"Number of search results to return.\",\r\n            advanced=True,\r\n            value=4,\r\n        ),\r\n        DropdownInput(\r\n            name=\"search_type\",\r\n            display_name=\"Search Type\",\r\n            info=\"Search type to use\",\r\n            options=[\"Similarity\", \"Similarity with score threshold\", \"MMR (Max Marginal Relevance)\"],\r\n            value=\"Similarity\",\r\n            advanced=True,\r\n        ),\r\n        FloatInput(\r\n            name=\"search_score_threshold\",\r\n            display_name=\"Search Score Threshold\",\r\n            info=\"Minimum similarity score threshold for search results. \"\r\n            \"(when using 'Similarity with score threshold')\",\r\n            value=0,\r\n            advanced=True,\r\n        ),\r\n        NestedDictInput(\r\n            name=\"advanced_search_filter\",\r\n            display_name=\"Search Metadata Filter\",\r\n            info=\"Optional dictionary of filters to apply to the search query.\",\r\n            advanced=True,\r\n        ),\r\n        BoolInput(\r\n            name=\"autodetect_collection\",\r\n            display_name=\"Autodetect Collection\",\r\n            info=\"Boolean flag to determine whether to autodetect the collection.\",\r\n            advanced=True,\r\n            value=True,\r\n        ),\r\n        StrInput(\r\n            name=\"content_field\",\r\n            display_name=\"Content Field\",\r\n            info=\"Field to use as the text content field for the vector store.\",\r\n            advanced=True,\r\n        ),\r\n        StrInput(\r\n            name=\"deletion_field\",\r\n            display_name=\"Deletion Based On Field\",\r\n            info=\"When this parameter is provided, documents in the target collection with \"\r\n            \"metadata field values matching the input metadata field value will be deleted \"\r\n            \"before new data is loaded.\",\r\n            advanced=True,\r\n        ),\r\n        BoolInput(\r\n            name=\"ignore_invalid_documents\",\r\n            display_name=\"Ignore Invalid Documents\",\r\n            info=\"Boolean flag to determine whether to ignore invalid documents at runtime.\",\r\n            advanced=True,\r\n        ),\r\n        NestedDictInput(\r\n            name=\"astradb_vectorstore_kwargs\",\r\n            display_name=\"AstraDBVectorStore Parameters\",\r\n            info=\"Optional dictionary of additional parameters for the AstraDBVectorStore.\",\r\n            advanced=True,\r\n        ),\r\n    ]\r\n\r\n    @classmethod\r\n    def map_cloud_providers(cls):\r\n        # TODO: Programmatically fetch the regions for each cloud provider\r\n        return {\r\n            \"dev\": {\r\n                \"Google Cloud Platform\": {\r\n                    \"id\": \"gcp\",\r\n                    \"regions\": [\"us-central1\"],\r\n                },\r\n            },\r\n            # TODO: Check test regions\r\n            \"test\": {\r\n                \"Google Cloud Platform\": {\r\n                    \"id\": \"gcp\",\r\n                    \"regions\": [\"us-central1\"],\r\n                },\r\n            },\r\n            \"prod\": {\r\n                \"Amazon Web Services\": {\r\n                    \"id\": \"aws\",\r\n                    \"regions\": [\"us-east-2\", \"ap-south-1\", \"eu-west-1\"],\r\n                },\r\n                \"Google Cloud Platform\": {\r\n                    \"id\": \"gcp\",\r\n                    \"regions\": [\"us-east1\"],\r\n                },\r\n                \"Microsoft Azure\": {\r\n                    \"id\": \"azure\",\r\n                    \"regions\": [\"westus3\"],\r\n                },\r\n            },\r\n        }\r\n\r\n    @classmethod\r\n    def get_vectorize_providers(cls, token: str, environment: str | None = None, api_endpoint: str | None = None):\r\n        try:\r\n            # Get the admin object\r\n            admin = AstraDBAdmin(token=token, environment=environment)\r\n            db_admin = admin.get_database_admin(api_endpoint=api_endpoint)\r\n\r\n            # Get the list of embedding providers\r\n            embedding_providers = db_admin.find_embedding_providers().as_dict()\r\n\r\n            vectorize_providers_mapping = {}\r\n            # Map the provider display name to the provider key and models\r\n            for provider_key, provider_data in embedding_providers[\"embeddingProviders\"].items():\r\n                # Get the provider display name and models\r\n                display_name = provider_data[\"displayName\"]\r\n                models = [model[\"name\"] for model in provider_data[\"models\"]]\r\n\r\n                # Build our mapping\r\n                vectorize_providers_mapping[display_name] = [provider_key, models]\r\n\r\n            # Sort the resulting dictionary\r\n            return defaultdict(list, dict(sorted(vectorize_providers_mapping.items())))\r\n        except Exception as _:  # noqa: BLE001\r\n            return {}\r\n\r\n    @classmethod\r\n    async def create_database_api(\r\n        cls,\r\n        new_database_name: str,\r\n        cloud_provider: str,\r\n        region: str,\r\n        token: str,\r\n        environment: str | None = None,\r\n        keyspace: str | None = None,\r\n    ):\r\n        client = DataAPIClient(token=token, environment=environment)\r\n\r\n        # Get the admin object\r\n        admin_client = client.get_admin(token=token)\r\n\r\n        # Get the environment, set to prod if null like\r\n        my_env = environment or \"prod\"\r\n\r\n        # Raise a value error if name isn't provided\r\n        if not new_database_name:\r\n            msg = \"Database name is required to create a new database.\"\r\n            raise ValueError(msg)\r\n\r\n        # Call the create database function\r\n        return await admin_client.async_create_database(\r\n            name=new_database_name,\r\n            cloud_provider=cls.map_cloud_providers()[my_env][cloud_provider][\"id\"],\r\n            region=region,\r\n            keyspace=keyspace,\r\n            wait_until_active=False,\r\n        )\r\n\r\n    @classmethod\r\n    async def create_collection_api(\r\n        cls,\r\n        new_collection_name: str,\r\n        token: str,\r\n        api_endpoint: str,\r\n        environment: str | None = None,\r\n        keyspace: str | None = None,\r\n        dimension: int | None = None,\r\n        embedding_generation_provider: str | None = None,\r\n        embedding_generation_model: str | None = None,\r\n    ):\r\n        # Create the data API client\r\n        client = DataAPIClient(token=token, environment=environment)\r\n\r\n        # Get the database object\r\n        database = client.get_async_database(api_endpoint=api_endpoint, token=token)\r\n\r\n        # Build vectorize options, if needed\r\n        vectorize_options = None\r\n        if not dimension:\r\n            vectorize_options = CollectionVectorServiceOptions(\r\n                provider=cls.get_vectorize_providers(\r\n                    token=token, environment=environment, api_endpoint=api_endpoint\r\n                ).get(embedding_generation_provider, [None, []])[0],\r\n                model_name=embedding_generation_model,\r\n            )\r\n\r\n        # Raise a value error if name isn't provided\r\n        if not new_collection_name:\r\n            msg = \"Collection name is required to create a new collection.\"\r\n            raise ValueError(msg)\r\n\r\n        # Create the collection\r\n        return await database.create_collection(\r\n            name=new_collection_name,\r\n            keyspace=keyspace,\r\n            dimension=dimension,\r\n            service=vectorize_options,\r\n        )\r\n\r\n    @classmethod\r\n    def get_database_list_static(cls, token: str, environment: str | None = None):\r\n        client = DataAPIClient(token=token, environment=environment)\r\n\r\n        # Get the admin object\r\n        admin_client = client.get_admin(token=token)\r\n\r\n        # Get the list of databases\r\n        db_list = list(admin_client.list_databases())\r\n\r\n        # Set the environment properly\r\n        env_string = \"\"\r\n        if environment and environment != \"prod\":\r\n            env_string = f\"-{environment}\"\r\n\r\n        # Generate the api endpoint for each database\r\n        db_info_dict = {}\r\n        for db in db_list:\r\n            try:\r\n                # Get the API endpoint for the database\r\n                api_endpoint = f\"https://{db.info.id}-{db.info.region}.apps.astra{env_string}.datastax.com\"\r\n\r\n                # Get the number of collections\r\n                try:\r\n                    num_collections = len(\r\n                        list(\r\n                            client.get_database(\r\n                                api_endpoint=api_endpoint, token=token, keyspace=db.info.keyspace\r\n                            ).list_collection_names(keyspace=db.info.keyspace)\r\n                        )\r\n                    )\r\n                except Exception:  # noqa: BLE001\r\n                    if db.status != \"PENDING\":\r\n                        continue\r\n                    num_collections = 0\r\n\r\n                # Add the database to the dictionary\r\n                db_info_dict[db.info.name] = {\r\n                    \"api_endpoint\": api_endpoint,\r\n                    \"collections\": num_collections,\r\n                    \"status\": db.status if db.status != \"ACTIVE\" else None,\r\n                    \"org_id\": db.org_id if db.org_id else None,\r\n                }\r\n            except Exception:  # noqa: BLE001, S110\r\n                pass\r\n\r\n        return db_info_dict\r\n\r\n    def get_database_list(self):\r\n        return self.get_database_list_static(token=self.token, environment=self.environment)\r\n\r\n    @classmethod\r\n    def get_api_endpoint_static(\r\n        cls,\r\n        token: str,\r\n        environment: str | None = None,\r\n        api_endpoint: str | None = None,\r\n        database_name: str | None = None,\r\n    ):\r\n        # If the api_endpoint is set, return it\r\n        if api_endpoint:\r\n            return api_endpoint\r\n\r\n        # Check if the database_name is like a url\r\n        if database_name and database_name.startswith(\"https://\"):\r\n            return database_name\r\n\r\n        # If the database is not set, nothing we can do.\r\n        if not database_name:\r\n            return None\r\n\r\n        # Grab the database object\r\n        db = cls.get_database_list_static(token=token, environment=environment).get(database_name)\r\n        if not db:\r\n            return None\r\n\r\n        # Otherwise, get the URL from the database list\r\n        return db.get(\"api_endpoint\")\r\n\r\n    def get_api_endpoint(self):\r\n        return self.get_api_endpoint_static(\r\n            token=self.token,\r\n            environment=self.environment,\r\n            api_endpoint=self.api_endpoint,\r\n            database_name=self.database_name,\r\n        )\r\n\r\n    @classmethod\r\n    def get_database_id_static(cls, api_endpoint: str) -> str | None:\r\n        # Pattern matches standard UUID format: 8-4-4-4-12 hexadecimal characters\r\n        uuid_pattern = r\"[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\"\r\n        match = re.search(uuid_pattern, api_endpoint)\r\n\r\n        return match.group(0) if match else None\r\n\r\n    def get_database_id(self):\r\n        return self.get_database_id_static(api_endpoint=self.get_api_endpoint())\r\n\r\n    def get_keyspace(self):\r\n        keyspace = self.keyspace\r\n\r\n        if keyspace:\r\n            return keyspace.strip()\r\n\r\n        return None\r\n\r\n    def get_database_object(self, api_endpoint: str | None = None):\r\n        try:\r\n            client = DataAPIClient(token=self.token, environment=self.environment)\r\n\r\n            return client.get_database(\r\n                api_endpoint=api_endpoint or self.get_api_endpoint(),\r\n                token=self.token,\r\n                keyspace=self.get_keyspace(),\r\n            )\r\n        except Exception as e:\r\n            msg = f\"Error fetching database object: {e}\"\r\n            raise ValueError(msg) from e\r\n\r\n    def collection_data(self, collection_name: str, database: Database | None = None):\r\n        try:\r\n            if not database:\r\n                client = DataAPIClient(token=self.token, environment=self.environment)\r\n\r\n                database = client.get_database(\r\n                    api_endpoint=self.get_api_endpoint(),\r\n                    token=self.token,\r\n                    keyspace=self.get_keyspace(),\r\n                )\r\n\r\n            collection = database.get_collection(collection_name, keyspace=self.get_keyspace())\r\n\r\n            return collection.estimated_document_count()\r\n        except Exception as e:  # noqa: BLE001\r\n            self.log(f\"Error checking collection data: {e}\")\r\n\r\n            return None\r\n\r\n    def _initialize_database_options(self):\r\n        try:\r\n            return [\r\n                {\r\n                    \"name\": name,\r\n                    \"status\": info[\"status\"],\r\n                    \"collections\": info[\"collections\"],\r\n                    \"api_endpoint\": info[\"api_endpoint\"],\r\n                    \"org_id\": info[\"org_id\"],\r\n                }\r\n                for name, info in self.get_database_list().items()\r\n            ]\r\n        except Exception as e:\r\n            msg = f\"Error fetching database options: {e}\"\r\n            raise ValueError(msg) from e\r\n\r\n    @classmethod\r\n    def get_provider_icon(cls, collection: CollectionDescriptor | None = None, provider_name: str | None = None) -> str:\r\n        # Get the provider name from the collection\r\n        provider_name = provider_name or (\r\n            collection.options.vector.service.provider\r\n            if collection and collection.options and collection.options.vector and collection.options.vector.service\r\n            else None\r\n        )\r\n\r\n        # If there is no provider, use the vector store icon\r\n        if not provider_name or provider_name == \"Bring your own\":\r\n            return \"vectorstores\"\r\n\r\n        # Map provider casings\r\n        case_map = {\r\n            \"nvidia\": \"NVIDIA\",\r\n            \"openai\": \"OpenAI\",\r\n            \"amazon bedrock\": \"AmazonBedrockEmbeddings\",\r\n            \"azure openai\": \"AzureOpenAiEmbeddings\",\r\n            \"cohere\": \"Cohere\",\r\n            \"jina ai\": \"JinaAI\",\r\n            \"mistral ai\": \"MistralAI\",\r\n            \"upstage\": \"Upstage\",\r\n            \"voyage ai\": \"VoyageAI\",\r\n        }\r\n\r\n        # Adjust the casing on some like nvidia\r\n        return case_map[provider_name.lower()] if provider_name.lower() in case_map else provider_name.title()\r\n\r\n    def _initialize_collection_options(self, api_endpoint: str | None = None):\r\n        # Nothing to generate if we don't have an API endpoint yet\r\n        api_endpoint = api_endpoint or self.get_api_endpoint()\r\n        if not api_endpoint:\r\n            return []\r\n\r\n        # Retrieve the database object\r\n        database = self.get_database_object(api_endpoint=api_endpoint)\r\n\r\n        # Get the list of collections\r\n        collection_list = list(database.list_collections(keyspace=self.get_keyspace()))\r\n\r\n        # Return the list of collections and metadata associated\r\n        return [\r\n            {\r\n                \"name\": col.name,\r\n                \"records\": self.collection_data(collection_name=col.name, database=database),\r\n                \"provider\": (\r\n                    col.options.vector.service.provider if col.options.vector and col.options.vector.service else None\r\n                ),\r\n                \"icon\": self.get_provider_icon(collection=col),\r\n                \"model\": (\r\n                    col.options.vector.service.model_name if col.options.vector and col.options.vector.service else None\r\n                ),\r\n            }\r\n            for col in collection_list\r\n        ]\r\n\r\n    def reset_provider_options(self, build_config: dict) -> dict:\r\n        \"\"\"Reset provider options and related configurations in the build_config dictionary.\"\"\"\r\n        # Extract template path for cleaner access\r\n        template = build_config[\"collection_name\"][\"dialog_inputs\"][\"fields\"][\"data\"][\"node\"][\"template\"]\r\n\r\n        # Get vectorize providers\r\n        vectorize_providers_api = self.get_vectorize_providers(\r\n            token=self.token,\r\n            environment=self.environment,\r\n            api_endpoint=build_config[\"api_endpoint\"][\"value\"],\r\n        )\r\n\r\n        # Create a new dictionary with \"Bring your own\" first\r\n        vectorize_providers: dict[str, list[list[str]]] = {\"Bring your own\": [[], []]}\r\n\r\n        # Add the remaining items (only Nvidia) from the original dictionary\r\n        vectorize_providers.update(\r\n            {\r\n                k: v\r\n                for k, v in vectorize_providers_api.items()\r\n                if k.lower() in [\"nvidia\"]  # TODO: Eventually support more\r\n            }\r\n        )\r\n\r\n        # Set provider options\r\n        provider_field = \"02_embedding_generation_provider\"\r\n        template[provider_field][\"options\"] = list(vectorize_providers.keys())\r\n\r\n        # Add metadata for each provider option\r\n        template[provider_field][\"options_metadata\"] = [\r\n            {\"icon\": self.get_provider_icon(provider_name=provider)} for provider in template[provider_field][\"options\"]\r\n        ]\r\n\r\n        # Get selected embedding provider\r\n        embedding_provider = template[provider_field][\"value\"]\r\n        is_bring_your_own = embedding_provider and embedding_provider == \"Bring your own\"\r\n\r\n        # Configure embedding model field\r\n        model_field = \"03_embedding_generation_model\"\r\n        template[model_field].update(\r\n            {\r\n                \"options\": vectorize_providers.get(embedding_provider, [[], []])[1],\r\n                \"placeholder\": \"Bring your own\" if is_bring_your_own else None,\r\n                \"readonly\": is_bring_your_own,\r\n                \"required\": not is_bring_your_own,\r\n                \"value\": None,\r\n            }\r\n        )\r\n\r\n        # If this is a bring your own, set dimensions to 0\r\n        return self.reset_dimension_field(build_config)\r\n\r\n    def reset_dimension_field(self, build_config: dict) -> dict:\r\n        \"\"\"Reset dimension field options based on provided configuration.\"\"\"\r\n        # Extract template path for cleaner access\r\n        template = build_config[\"collection_name\"][\"dialog_inputs\"][\"fields\"][\"data\"][\"node\"][\"template\"]\r\n\r\n        # Get selected embedding model\r\n        provider_field = \"02_embedding_generation_provider\"\r\n        embedding_provider = template[provider_field][\"value\"]\r\n        is_bring_your_own = embedding_provider and embedding_provider == \"Bring your own\"\r\n\r\n        # Configure dimension field\r\n        dimension_field = \"04_dimension\"\r\n        dimension_value = 1024 if not is_bring_your_own else None  # TODO: Dynamically figure this out\r\n        template[dimension_field].update(\r\n            {\r\n                \"placeholder\": dimension_value,\r\n                \"value\": dimension_value,\r\n                \"readonly\": not is_bring_your_own,\r\n                \"required\": is_bring_your_own,\r\n            }\r\n        )\r\n\r\n        return build_config\r\n\r\n    def reset_collection_list(self, build_config: dict) -> dict:\r\n        \"\"\"Reset collection list options based on provided configuration.\"\"\"\r\n        # Get collection options\r\n        collection_options = self._initialize_collection_options(api_endpoint=build_config[\"api_endpoint\"][\"value\"])\r\n\r\n        # Update collection configuration\r\n        collection_config = build_config[\"collection_name\"]\r\n        collection_config.update(\r\n            {\r\n                \"options\": [col[\"name\"] for col in collection_options],\r\n                \"options_metadata\": [{k: v for k, v in col.items() if k != \"name\"} for col in collection_options],\r\n            }\r\n        )\r\n\r\n        # Reset selected collection if not in options\r\n        if collection_config[\"value\"] not in collection_config[\"options\"]:\r\n            collection_config[\"value\"] = \"\"\r\n\r\n        # Set advanced status based on database selection\r\n        collection_config[\"advanced\"] = not build_config[\"database_name\"][\"value\"]\r\n\r\n        return build_config\r\n\r\n    def reset_database_list(self, build_config: dict) -> dict:\r\n        \"\"\"Reset database list options and related configurations.\"\"\"\r\n        # Get database options\r\n        database_options = self._initialize_database_options()\r\n\r\n        # Update cloud provider options\r\n        env = self.environment or \"prod\"\r\n        template = build_config[\"database_name\"][\"dialog_inputs\"][\"fields\"][\"data\"][\"node\"][\"template\"]\r\n        template[\"02_cloud_provider\"][\"options\"] = list(self.map_cloud_providers()[env].keys())\r\n\r\n        # Update database configuration\r\n        database_config = build_config[\"database_name\"]\r\n        database_config.update(\r\n            {\r\n                \"options\": [db[\"name\"] for db in database_options],\r\n                \"options_metadata\": [{k: v for k, v in db.items() if k != \"name\"} for db in database_options],\r\n            }\r\n        )\r\n\r\n        # Reset selections if value not in options\r\n        if database_config[\"value\"] not in database_config[\"options\"]:\r\n            database_config[\"value\"] = \"\"\r\n            build_config[\"api_endpoint\"][\"value\"] = \"\"\r\n            build_config[\"collection_name\"][\"advanced\"] = True\r\n\r\n        # Set advanced status based on token presence\r\n        database_config[\"advanced\"] = not build_config[\"token\"][\"value\"]\r\n\r\n        return build_config\r\n\r\n    def reset_build_config(self, build_config: dict) -> dict:\r\n        \"\"\"Reset all build configuration options to default empty state.\"\"\"\r\n        # Reset database configuration\r\n        database_config = build_config[\"database_name\"]\r\n        database_config.update({\"options\": [], \"options_metadata\": [], \"value\": \"\", \"advanced\": True})\r\n        build_config[\"api_endpoint\"][\"value\"] = \"\"\r\n\r\n        # Reset collection configuration\r\n        collection_config = build_config[\"collection_name\"]\r\n        collection_config.update({\"options\": [], \"options_metadata\": [], \"value\": \"\", \"advanced\": True})\r\n\r\n        return build_config\r\n\r\n    async def update_build_config(self, build_config: dict, field_value: str, field_name: str | None = None) -> dict:\r\n        \"\"\"Update build configuration based on field name and value.\"\"\"\r\n        # Early return if no token provided\r\n        if not self.token:\r\n            return self.reset_build_config(build_config)\r\n\r\n        # Database creation callback\r\n        if field_name == \"database_name\" and isinstance(field_value, dict):\r\n            if \"01_new_database_name\" in field_value:\r\n                await self._create_new_database(build_config, field_value)\r\n                return self.reset_collection_list(build_config)\r\n            return self._update_cloud_regions(build_config, field_value)\r\n\r\n        # Collection creation callback\r\n        if field_name == \"collection_name\" and isinstance(field_value, dict):\r\n            # Case 1: New collection creation\r\n            if \"01_new_collection_name\" in field_value:\r\n                await self._create_new_collection(build_config, field_value)\r\n                return build_config\r\n\r\n            # Case 2: Update embedding provider options\r\n            if \"02_embedding_generation_provider\" in field_value:\r\n                return self.reset_provider_options(build_config)\r\n\r\n            # Case 3: Update dimension field\r\n            if \"03_embedding_generation_model\" in field_value:\r\n                return self.reset_dimension_field(build_config)\r\n\r\n        # Initial execution or token/environment change\r\n        first_run = field_name == \"collection_name\" and not field_value and not build_config[\"database_name\"][\"options\"]\r\n        if first_run or field_name in {\"token\", \"environment\"}:\r\n            return self.reset_database_list(build_config)\r\n\r\n        # Database selection change\r\n        if field_name == \"database_name\" and not isinstance(field_value, dict):\r\n            return self._handle_database_selection(build_config, field_value)\r\n\r\n        # Collection selection change\r\n        if field_name == \"collection_name\" and not isinstance(field_value, dict):\r\n            return self._handle_collection_selection(build_config, field_value)\r\n\r\n        return build_config\r\n\r\n    async def _create_new_database(self, build_config: dict, field_value: dict) -> None:\r\n        \"\"\"Create a new database and update build config options.\"\"\"\r\n        try:\r\n            await self.create_database_api(\r\n                new_database_name=field_value[\"01_new_database_name\"],\r\n                token=self.token,\r\n                keyspace=self.get_keyspace(),\r\n                environment=self.environment,\r\n                cloud_provider=field_value[\"02_cloud_provider\"],\r\n                region=field_value[\"03_region\"],\r\n            )\r\n        except Exception as e:\r\n            msg = f\"Error creating database: {e}\"\r\n            raise ValueError(msg) from e\r\n\r\n        build_config[\"database_name\"][\"options\"].append(field_value[\"01_new_database_name\"])\r\n        build_config[\"database_name\"][\"options_metadata\"].append(\r\n            {\r\n                \"status\": \"PENDING\",\r\n                \"collections\": 0,\r\n                \"api_endpoint\": None,\r\n                \"org_id\": None,\r\n            }\r\n        )\r\n\r\n    def _update_cloud_regions(self, build_config: dict, field_value: dict) -> dict:\r\n        \"\"\"Update cloud provider regions in build config.\"\"\"\r\n        env = self.environment or \"prod\"\r\n        cloud_provider = field_value[\"02_cloud_provider\"]\r\n\r\n        # Update the region options based on the selected cloud provider\r\n        template = build_config[\"database_name\"][\"dialog_inputs\"][\"fields\"][\"data\"][\"node\"][\"template\"]\r\n        template[\"03_region\"][\"options\"] = self.map_cloud_providers()[env][cloud_provider][\"regions\"]\r\n\r\n        # Reset the the 03_region value if it's not in the new options\r\n        if template[\"03_region\"][\"value\"] not in template[\"03_region\"][\"options\"]:\r\n            template[\"03_region\"][\"value\"] = None\r\n\r\n        return build_config\r\n\r\n    async def _create_new_collection(self, build_config: dict, field_value: dict) -> None:\r\n        \"\"\"Create a new collection and update build config options.\"\"\"\r\n        embedding_provider = field_value.get(\"02_embedding_generation_provider\")\r\n        try:\r\n            await self.create_collection_api(\r\n                new_collection_name=field_value[\"01_new_collection_name\"],\r\n                token=self.token,\r\n                api_endpoint=build_config[\"api_endpoint\"][\"value\"],\r\n                environment=self.environment,\r\n                keyspace=self.get_keyspace(),\r\n                dimension=field_value.get(\"04_dimension\") if embedding_provider == \"Bring your own\" else None,\r\n                embedding_generation_provider=embedding_provider,\r\n                embedding_generation_model=field_value.get(\"03_embedding_generation_model\"),\r\n            )\r\n        except Exception as e:\r\n            msg = f\"Error creating collection: {e}\"\r\n            raise ValueError(msg) from e\r\n\r\n        provider = embedding_provider.lower() if embedding_provider and embedding_provider != \"Bring your own\" else None\r\n        build_config[\"collection_name\"].update(\r\n            {\r\n                \"value\": field_value[\"01_new_collection_name\"],\r\n                \"options\": build_config[\"collection_name\"][\"options\"] + [field_value[\"01_new_collection_name\"]],\r\n            }\r\n        )\r\n        build_config[\"embedding_choice\"][\"value\"] = \"Astra Vectorize\" if provider else \"Embedding Model\"\r\n        build_config[\"embedding_model\"][\"advanced\"] = bool(provider)\r\n        build_config[\"collection_name\"][\"options_metadata\"].append(\r\n            {\r\n                \"records\": 0,\r\n                \"provider\": provider,\r\n                \"icon\": self.get_provider_icon(provider_name=embedding_provider),\r\n                \"model\": field_value.get(\"03_embedding_generation_model\"),\r\n            }\r\n        )\r\n\r\n    def _handle_database_selection(self, build_config: dict, field_value: str) -> dict:\r\n        \"\"\"Handle database selection and update related configurations.\"\"\"\r\n        build_config = self.reset_database_list(build_config)\r\n\r\n        # Reset collection list if database selection changes\r\n        if field_value not in build_config[\"database_name\"][\"options\"]:\r\n            build_config[\"database_name\"][\"value\"] = \"\"\r\n            return build_config\r\n\r\n        # Get the api endpoint for the selected database\r\n        index = build_config[\"database_name\"][\"options\"].index(field_value)\r\n        build_config[\"api_endpoint\"][\"value\"] = build_config[\"database_name\"][\"options_metadata\"][index][\"api_endpoint\"]\r\n\r\n        # Get the org_id for the selected database\r\n        org_id = build_config[\"database_name\"][\"options_metadata\"][index][\"org_id\"]\r\n        if not org_id:\r\n            return build_config\r\n\r\n        # Get the database id for the selected database\r\n        db_id = self.get_database_id_static(api_endpoint=build_config[\"api_endpoint\"][\"value\"])\r\n        keyspace = self.get_keyspace() or \"default_keyspace\"\r\n\r\n        # Update the helper text for the embedding provider field\r\n        template = build_config[\"collection_name\"][\"dialog_inputs\"][\"fields\"][\"data\"][\"node\"][\"template\"]\r\n        template[\"02_embedding_generation_provider\"][\"helper_text\"] = (\r\n            \"To create collections with more embedding provider options, go to \"\r\n            f'<a class=\"underline\" target=\"_blank\" rel=\"noopener noreferrer\" '\r\n            f'href=\"https://astra.datastax.com/org/{org_id}/database/{db_id}/data-explorer?createCollection=1&namespace={keyspace}\">'\r\n            \"your database in Astra DB</a>.\"\r\n        )\r\n\r\n        # Reset provider options\r\n        build_config = self.reset_provider_options(build_config)\r\n\r\n        return self.reset_collection_list(build_config)\r\n\r\n    def _handle_collection_selection(self, build_config: dict, field_value: str) -> dict:\r\n        \"\"\"Handle collection selection and update embedding options.\"\"\"\r\n        build_config[\"autodetect_collection\"][\"value\"] = True\r\n        build_config = self.reset_collection_list(build_config)\r\n\r\n        if field_value and field_value not in build_config[\"collection_name\"][\"options\"]:\r\n            build_config[\"collection_name\"][\"options\"].append(field_value)\r\n            build_config[\"collection_name\"][\"options_metadata\"].append(\r\n                {\r\n                    \"records\": 0,\r\n                    \"provider\": None,\r\n                    \"icon\": \"vectorstores\",\r\n                    \"model\": None,\r\n                }\r\n            )\r\n            build_config[\"autodetect_collection\"][\"value\"] = False\r\n\r\n        if not field_value:\r\n            return build_config\r\n\r\n        index = build_config[\"collection_name\"][\"options\"].index(field_value)\r\n        provider = build_config[\"collection_name\"][\"options_metadata\"][index][\"provider\"]\r\n        build_config[\"embedding_model\"][\"advanced\"] = bool(provider)\r\n        build_config[\"embedding_choice\"][\"value\"] = \"Astra Vectorize\" if provider else \"Embedding Model\"\r\n        return build_config\r\n\r\n    @check_cached_vector_store\r\n    def build_vector_store(self):\r\n        try:\r\n            from langchain_astradb import AstraDBVectorStore\r\n        except ImportError as e:\r\n            msg = (\r\n                \"Could not import langchain Astra DB integration package. \"\r\n                \"Please install it with `pip install langchain-astradb`.\"\r\n            )\r\n            raise ImportError(msg) from e\r\n\r\n        # Get the embedding model and additional params\r\n        embedding_params = (\r\n            {\"embedding\": self.embedding_model}\r\n            if self.embedding_model and self.embedding_choice == \"Embedding Model\"\r\n            else {}\r\n        )\r\n\r\n        # Get the additional parameters\r\n        additional_params = self.astradb_vectorstore_kwargs or {}\r\n\r\n        # Get Langflow version and platform information\r\n        __version__ = get_version_info()[\"version\"]\r\n        langflow_prefix = \"\"\r\n        # if os.getenv(\"AWS_EXECUTION_ENV\") == \"AWS_ECS_FARGATE\":  # TODO: More precise way of detecting\r\n        #     langflow_prefix = \"ds-\"\r\n\r\n        # Get the database object\r\n        database = self.get_database_object()\r\n        autodetect = self.collection_name in database.list_collection_names() and self.autodetect_collection\r\n\r\n        # Bundle up the auto-detect parameters\r\n        autodetect_params = {\r\n            \"autodetect_collection\": autodetect,\r\n            \"content_field\": (\r\n                self.content_field\r\n                if self.content_field and embedding_params\r\n                else (\r\n                    \"page_content\"\r\n                    if embedding_params\r\n                    and self.collection_data(collection_name=self.collection_name, database=database) == 0\r\n                    else None\r\n                )\r\n            ),\r\n            \"ignore_invalid_documents\": self.ignore_invalid_documents,\r\n        }\r\n\r\n        # Attempt to build the Vector Store object\r\n        try:\r\n            vector_store = AstraDBVectorStore(\r\n                # Astra DB Authentication Parameters\r\n                token=self.token,\r\n                api_endpoint=database.api_endpoint,\r\n                namespace=database.keyspace,\r\n                collection_name=self.collection_name,\r\n                environment=self.environment,\r\n                # Astra DB Usage Tracking Parameters\r\n                ext_callers=[(f\"{langflow_prefix}langflow\", __version__)],\r\n                # Astra DB Vector Store Parameters\r\n                **autodetect_params,\r\n                **embedding_params,\r\n                **additional_params,\r\n            )\r\n        except Exception as e:\r\n            msg = f\"Error initializing AstraDBVectorStore: {e}\"\r\n            raise ValueError(msg) from e\r\n\r\n        # Add documents to the vector store\r\n        self._add_documents_to_vector_store(vector_store)\r\n\r\n        return vector_store\r\n\r\n    def _add_documents_to_vector_store(self, vector_store) -> None:\r\n        self.ingest_data = self._prepare_ingest_data()\r\n\r\n        documents = []\r\n        for _input in self.ingest_data or []:\r\n            if isinstance(_input, Data):\r\n                documents.append(_input.to_lc_document())\r\n            else:\r\n                msg = \"Vector Store Inputs must be Data objects.\"\r\n                raise TypeError(msg)\r\n\r\n        if documents and self.deletion_field:\r\n            self.log(f\"Deleting documents where {self.deletion_field}\")\r\n            try:\r\n                database = self.get_database_object()\r\n                collection = database.get_collection(self.collection_name, keyspace=database.keyspace)\r\n                delete_values = list({doc.metadata[self.deletion_field] for doc in documents})\r\n                self.log(f\"Deleting documents where {self.deletion_field} matches {delete_values}.\")\r\n                collection.delete_many({f\"metadata.{self.deletion_field}\": {\"$in\": delete_values}})\r\n            except Exception as e:\r\n                msg = f\"Error deleting documents from AstraDBVectorStore based on '{self.deletion_field}': {e}\"\r\n                raise ValueError(msg) from e\r\n\r\n        if documents:\r\n            self.log(f\"Adding {len(documents)} documents to the Vector Store.\")\r\n            try:\r\n                vector_store.add_documents(documents)\r\n            except Exception as e:\r\n                msg = f\"Error adding documents to AstraDBVectorStore: {e}\"\r\n                raise ValueError(msg) from e\r\n        else:\r\n            self.log(\"No documents to add to the Vector Store.\")\r\n\r\n    def _map_search_type(self) -> str:\r\n        search_type_mapping = {\r\n            \"Similarity with score threshold\": \"similarity_score_threshold\",\r\n            \"MMR (Max Marginal Relevance)\": \"mmr\",\r\n        }\r\n\r\n        return search_type_mapping.get(self.search_type, \"similarity\")\r\n\r\n    def _build_search_args(self):\r\n        query = self.search_query if isinstance(self.search_query, str) and self.search_query.strip() else None\r\n\r\n        if query:\r\n            args = {\r\n                \"query\": query,\r\n                \"search_type\": self._map_search_type(),\r\n                \"k\": self.number_of_results,\r\n                \"score_threshold\": self.search_score_threshold,\r\n            }\r\n        elif self.advanced_search_filter:\r\n            args = {\r\n                \"n\": self.number_of_results,\r\n            }\r\n        else:\r\n            return {}\r\n\r\n        filter_arg = self.advanced_search_filter or {}\r\n        if filter_arg:\r\n            args[\"filter\"] = filter_arg\r\n\r\n        return args\r\n\r\n    def search_documents(self, vector_store=None) -> list[Data]:\r\n        vector_store = vector_store or self.build_vector_store()\r\n\r\n        self.log(f\"Search input: {self.search_query}\")\r\n        self.log(f\"Search type: {self.search_type}\")\r\n        self.log(f\"Number of results: {self.number_of_results}\")\r\n\r\n        try:\r\n            search_args = self._build_search_args()\r\n        except Exception as e:\r\n            msg = f\"Error in AstraDBVectorStore._build_search_args: {e}\"\r\n            raise ValueError(msg) from e\r\n\r\n        if not search_args:\r\n            self.log(\"No search input or filters provided. Skipping search.\")\r\n            return []\r\n\r\n        docs = []\r\n        search_method = \"search\" if \"query\" in search_args else \"metadata_search\"\r\n\r\n        try:\r\n            self.log(f\"Calling vector_store.{search_method} with args: {search_args}\")\r\n            docs = getattr(vector_store, search_method)(**search_args)\r\n        except Exception as e:\r\n            msg = f\"Error performing {search_method} in AstraDBVectorStore: {e}\"\r\n            raise ValueError(msg) from e\r\n\r\n        self.log(f\"Retrieved documents: {len(docs)}\")\r\n\r\n        data = docs_to_data(docs)\r\n        self.log(f\"Converted documents to data: {len(data)}\")\r\n        self.status = data\r\n\r\n        return data\r\n\r\n    def get_retriever_kwargs(self):\r\n        search_args = self._build_search_args()\r\n\r\n        return {\r\n            \"search_type\": self._map_search_type(),\r\n            \"search_kwargs\": search_args,\r\n        }"
+              },
+              "collection_name": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": true,
+                "dialog_inputs": {
+                  "fields": {
+                    "data": {
+                      "node": {
+                        "description": "Please allow several seconds for creation to complete.",
+                        "display_name": "Create new collection",
+                        "field_order": [
+                          "01_new_collection_name",
+                          "02_embedding_generation_provider",
+                          "03_embedding_generation_model",
+                          "04_dimension"
+                        ],
+                        "name": "create_collection",
+                        "template": {
+                          "01_new_collection_name": {
+                            "_input_type": "StrInput",
+                            "advanced": false,
+                            "display_name": "Name",
+                            "dynamic": false,
+                            "info": "Name of the new collection to create in Astra DB.",
+                            "list": false,
+                            "list_add_label": "Add More",
+                            "load_from_db": false,
+                            "name": "new_collection_name",
+                            "placeholder": "",
+                            "required": true,
+                            "show": true,
+                            "title_case": false,
+                            "tool_mode": false,
+                            "trace_as_metadata": true,
+                            "type": "str",
+                            "value": ""
+                          },
+                          "02_embedding_generation_provider": {
+                            "_input_type": "DropdownInput",
+                            "advanced": false,
+                            "combobox": false,
+                            "dialog_inputs": {},
+                            "display_name": "Embedding generation method",
+                            "dynamic": false,
+                            "helper_text": "To create collections with more embedding provider options, go to <a class=\"underline\" target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://astra.datastax.com/org/bea868ae-e860-48e8-815c-b0943394010d/database/200bd7a0-d6b7-4f07-95e6-d57d73ba5879/data-explorer?createCollection=1&namespace=default_keyspace\">your database in Astra DB</a>.",
+                            "info": "Provider to use for generating embeddings.",
+                            "name": "embedding_generation_provider",
+                            "options": [
+                              "Bring your own",
+                              "Nvidia"
+                            ],
+                            "options_metadata": [
+                              {
+                                "icon": "vectorstores"
+                              },
+                              {
+                                "icon": "NVIDIA"
+                              }
+                            ],
+                            "placeholder": "",
+                            "real_time_refresh": true,
+                            "required": true,
+                            "show": true,
+                            "title_case": false,
+                            "tool_mode": false,
+                            "trace_as_metadata": true,
+                            "type": "str",
+                            "value": ""
+                          },
+                          "03_embedding_generation_model": {
+                            "_input_type": "DropdownInput",
+                            "advanced": false,
+                            "combobox": false,
+                            "dialog_inputs": {},
+                            "display_name": "Embedding model",
+                            "dynamic": false,
+                            "info": "Model to use for generating embeddings.",
+                            "name": "embedding_generation_model",
+                            "options": [],
+                            "options_metadata": [],
+                            "placeholder": null,
+                            "readonly": "",
+                            "real_time_refresh": true,
+                            "required": true,
+                            "show": true,
+                            "title_case": false,
+                            "tool_mode": false,
+                            "trace_as_metadata": true,
+                            "type": "str",
+                            "value": null
+                          },
+                          "04_dimension": {
+                            "_input_type": "IntInput",
+                            "advanced": false,
+                            "display_name": "Dimensions",
+                            "dynamic": false,
+                            "info": "Dimensions of the embeddings to generate.",
+                            "list": false,
+                            "list_add_label": "Add More",
+                            "name": "dimension",
+                            "placeholder": 1024,
+                            "readonly": true,
+                            "required": "",
+                            "show": true,
+                            "title_case": false,
+                            "tool_mode": false,
+                            "trace_as_metadata": true,
+                            "type": "int",
+                            "value": 1024
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "functionality": "create"
+                },
+                "display_name": "Collection",
+                "dynamic": false,
+                "info": "The name of the collection within Astra DB where the vectors will be stored.",
+                "load_from_db": false,
+                "name": "collection_name",
+                "options": [
+                  "land_law",
+                  "land_properties_data",
+                  "land_property"
+                ],
+                "options_metadata": [
+                  {
+                    "icon": "NVIDIA",
+                    "model": "NV-Embed-QA",
+                    "provider": "nvidia",
+                    "records": 5
+                  },
+                  {
+                    "icon": "NVIDIA",
+                    "model": "NV-Embed-QA",
+                    "provider": "nvidia",
+                    "records": 10
+                  },
+                  {
+                    "icon": "NVIDIA",
+                    "model": "NV-Embed-QA",
+                    "provider": "nvidia",
+                    "records": 8
+                  }
+                ],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "refresh_button": true,
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "land_properties_data"
+              },
+              "content_field": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Content Field",
+                "dynamic": false,
+                "info": "Field to use as the text content field for the vector store.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "content_field",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "database_name": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": true,
+                "dialog_inputs": {
+                  "fields": {
+                    "data": {
+                      "node": {
+                        "description": "Please allow several minutes for creation to complete.",
+                        "display_name": "Create new database",
+                        "field_order": [
+                          "01_new_database_name",
+                          "02_cloud_provider",
+                          "03_region"
+                        ],
+                        "name": "create_database",
+                        "template": {
+                          "01_new_database_name": {
+                            "_input_type": "StrInput",
+                            "advanced": false,
+                            "display_name": "Name",
+                            "dynamic": false,
+                            "info": "Name of the new database to create in Astra DB.",
+                            "list": false,
+                            "list_add_label": "Add More",
+                            "load_from_db": false,
+                            "name": "new_database_name",
+                            "placeholder": "",
+                            "required": true,
+                            "show": true,
+                            "title_case": false,
+                            "tool_mode": false,
+                            "trace_as_metadata": true,
+                            "type": "str",
+                            "value": ""
+                          },
+                          "02_cloud_provider": {
+                            "_input_type": "DropdownInput",
+                            "advanced": false,
+                            "combobox": false,
+                            "dialog_inputs": {},
+                            "display_name": "Cloud provider",
+                            "dynamic": false,
+                            "info": "Cloud provider for the new database.",
+                            "name": "cloud_provider",
+                            "options": [
+                              "Amazon Web Services",
+                              "Google Cloud Platform",
+                              "Microsoft Azure"
+                            ],
+                            "options_metadata": [],
+                            "placeholder": "",
+                            "real_time_refresh": true,
+                            "required": true,
+                            "show": true,
+                            "title_case": false,
+                            "tool_mode": false,
+                            "trace_as_metadata": true,
+                            "type": "str",
+                            "value": ""
+                          },
+                          "03_region": {
+                            "_input_type": "DropdownInput",
+                            "advanced": false,
+                            "combobox": false,
+                            "dialog_inputs": {},
+                            "display_name": "Region",
+                            "dynamic": false,
+                            "info": "Region for the new database.",
+                            "name": "region",
+                            "options": [],
+                            "options_metadata": [],
+                            "placeholder": "",
+                            "required": true,
+                            "show": true,
+                            "title_case": false,
+                            "tool_mode": false,
+                            "trace_as_metadata": true,
+                            "type": "str",
+                            "value": ""
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "functionality": "create"
+                },
+                "display_name": "Database",
+                "dynamic": false,
+                "info": "The Database name for the Astra DB instance.",
+                "load_from_db": false,
+                "name": "database_name",
+                "options": [
+                  "pdf_store",
+                  "db_land"
+                ],
+                "options_metadata": [
+                  {
+                    "api_endpoint": "https://3f0b00b3-c339-431c-918f-688346538903-us-east-2.apps.astra.datastax.com",
+                    "collections": 1,
+                    "org_id": "bea868ae-e860-48e8-815c-b0943394010d",
+                    "status": null
+                  },
+                  {
+                    "api_endpoint": "https://200bd7a0-d6b7-4f07-95e6-d57d73ba5879-us-east-2.apps.astra.datastax.com",
+                    "collections": 3,
+                    "org_id": "bea868ae-e860-48e8-815c-b0943394010d",
+                    "status": null
+                  }
+                ],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "refresh_button": true,
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "db_land"
+              },
+              "deletion_field": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Deletion Based On Field",
+                "dynamic": false,
+                "info": "When this parameter is provided, documents in the target collection with metadata field values matching the input metadata field value will be deleted before new data is loaded.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "deletion_field",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "embedding_choice": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Embedding Model or Astra Vectorize",
+                "dynamic": false,
+                "info": "Choose an embedding model or use Astra Vectorize.",
+                "load_from_db": false,
+                "name": "embedding_choice",
+                "options": [
+                  "Embedding Model",
+                  "Astra Vectorize"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Astra Vectorize"
+              },
+              "embedding_model": {
+                "_input_type": "HandleInput",
+                "advanced": true,
+                "display_name": "Embedding Model",
+                "dynamic": false,
+                "info": "Specify the Embedding Model. Not required for Astra Vectorize collections.",
+                "input_types": [
+                  "Embeddings"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "embedding_model",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "environment": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Environment",
+                "dynamic": false,
+                "info": "The environment for the Astra DB API Endpoint.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "environment",
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "ignore_invalid_documents": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Ignore Invalid Documents",
+                "dynamic": false,
+                "info": "Boolean flag to determine whether to ignore invalid documents at runtime.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "ignore_invalid_documents",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              },
+              "ingest_data": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Ingest Data",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Data",
+                  "DataFrame"
+                ],
+                "list": true,
+                "list_add_label": "Add More",
+                "name": "ingest_data",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "keyspace": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Keyspace",
+                "dynamic": false,
+                "info": "Optional keyspace within Astra DB to use for the collection.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "keyspace",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "number_of_results": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Number of Search Results",
+                "dynamic": false,
+                "info": "Number of search results to return.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "number_of_results",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 4
+              },
+              "search_query": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Search Query",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "search_query",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "search_score_threshold": {
+                "_input_type": "FloatInput",
+                "advanced": true,
+                "display_name": "Search Score Threshold",
+                "dynamic": false,
+                "info": "Minimum similarity score threshold for search results. (when using 'Similarity with score threshold')",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "search_score_threshold",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "float",
+                "value": 0
+              },
+              "search_type": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Search Type",
+                "dynamic": false,
+                "info": "Search type to use",
+                "name": "search_type",
+                "options": [
+                  "Similarity",
+                  "Similarity with score threshold",
+                  "MMR (Max Marginal Relevance)"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Similarity"
+              },
+              "should_cache_vector_store": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Cache Vector Store",
+                "dynamic": false,
+                "info": "If True, the vector store will be cached for the current build of the component. This is useful for components that have multiple output methods and want to share the same vector store.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "should_cache_vector_store",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "token": {
+                "_input_type": "SecretStrInput",
+                "advanced": false,
+                "display_name": "Astra DB Application Token",
+                "dynamic": false,
+                "info": "Authentication token for accessing Astra DB.",
+                "input_types": [],
+                "load_from_db": true,
+                "name": "token",
+                "password": true,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": "ASTRA_DB_APPLICATION_TOKEN"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "AstraDB"
+        },
+        "dragging": false,
+        "id": "AstraDB-nKyHt",
+        "measured": {
+          "height": 569,
+          "width": 320
+        },
+        "position": {
+          "x": 3684.153370629747,
+          "y": 709.2760945196959
+        },
+        "selected": true,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "ParseJSONData-yBZo0",
+          "node": {
+            "base_classes": [
+              "Data"
+            ],
+            "beta": false,
+            "category": "processing",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Convert and extract JSON fields.",
+            "display_name": "Parse JSON",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "input_value",
+              "query"
+            ],
+            "frozen": false,
+            "icon": "braces",
+            "key": "ParseJSONData",
+            "legacy": true,
+            "lf_version": "1.3.2",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Filtered Data",
+                "method": "filter_data",
+                "name": "filtered_data",
+                "selected": "Data",
+                "tool_mode": true,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "score": 0.007568328950209746,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import json\nfrom json import JSONDecodeError\n\nimport jq\nfrom json_repair import repair_json\nfrom loguru import logger\n\nfrom langflow.custom import Component\nfrom langflow.inputs import HandleInput, MessageTextInput\nfrom langflow.io import Output\nfrom langflow.schema import Data\nfrom langflow.schema.message import Message\n\n\nclass ParseJSONDataComponent(Component):\n    display_name = \"Parse JSON\"\n    description = \"Convert and extract JSON fields.\"\n    icon = \"braces\"\n    name = \"ParseJSONData\"\n    legacy: bool = True\n\n    inputs = [\n        HandleInput(\n            name=\"input_value\",\n            display_name=\"Input\",\n            info=\"Data object to filter.\",\n            required=True,\n            input_types=[\"Message\", \"Data\"],\n        ),\n        MessageTextInput(\n            name=\"query\",\n            display_name=\"JQ Query\",\n            info=\"JQ Query to filter the data. The input is always a JSON list.\",\n            required=True,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Filtered Data\", name=\"filtered_data\", method=\"filter_data\"),\n    ]\n\n    def _parse_data(self, input_value) -> str:\n        if isinstance(input_value, Message) and isinstance(input_value.text, str):\n            return input_value.text\n        if isinstance(input_value, Data):\n            return json.dumps(input_value.data)\n        return str(input_value)\n\n    def filter_data(self) -> list[Data]:\n        to_filter = self.input_value\n        if not to_filter:\n            return []\n        # Check if input is a list\n        if isinstance(to_filter, list):\n            to_filter = [self._parse_data(f) for f in to_filter]\n        else:\n            to_filter = self._parse_data(to_filter)\n\n        # If input is not a list, don't wrap it in a list\n        if not isinstance(to_filter, list):\n            to_filter = repair_json(to_filter)\n            try:\n                to_filter_as_dict = json.loads(to_filter)\n            except JSONDecodeError:\n                try:\n                    to_filter_as_dict = json.loads(repair_json(to_filter))\n                except JSONDecodeError as e:\n                    msg = f\"Invalid JSON: {e}\"\n                    raise ValueError(msg) from e\n        else:\n            to_filter = [repair_json(f) for f in to_filter]\n            to_filter_as_dict = []\n            for f in to_filter:\n                try:\n                    to_filter_as_dict.append(json.loads(f))\n                except JSONDecodeError:\n                    try:\n                        to_filter_as_dict.append(json.loads(repair_json(f)))\n                    except JSONDecodeError as e:\n                        msg = f\"Invalid JSON: {e}\"\n                        raise ValueError(msg) from e\n            to_filter = to_filter_as_dict\n\n        full_filter_str = json.dumps(to_filter_as_dict)\n\n        logger.info(\"to_filter: \", to_filter)\n\n        results = jq.compile(self.query).input_text(full_filter_str).all()\n        logger.info(\"results: \", results)\n        return [Data(data=value) if isinstance(value, dict) else Data(text=str(value)) for value in results]\n"
+              },
+              "input_value": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Input",
+                "dynamic": false,
+                "info": "Data object to filter.",
+                "input_types": [
+                  "Message",
+                  "Data"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_value",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "query": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "JQ Query",
+                "dynamic": false,
+                "info": "JQ Query to filter the data. The input is always a JSON list.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "query",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "."
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "ParseJSONData"
+        },
+        "dragging": false,
+        "id": "ParseJSONData-yBZo0",
+        "measured": {
+          "height": 274,
+          "width": 320
+        },
+        "position": {
+          "x": 3330.1220161762953,
+          "y": 1045.1741023203185
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "ChatOutput-1dkx7",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Display a chat message in the Playground.",
+            "display_name": "Chat Output",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "input_value",
+              "should_store_message",
+              "sender",
+              "sender_name",
+              "session_id",
+              "data_template",
+              "background_color",
+              "chat_icon",
+              "text_color",
+              "clean_data"
+            ],
+            "frozen": false,
+            "icon": "MessagesSquare",
+            "legacy": false,
+            "lf_version": "1.3.2",
+            "metadata": {},
+            "minimized": true,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Message",
+                "method": "message_response",
+                "name": "message",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "background_color": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Background Color",
+                "dynamic": false,
+                "info": "The background color of the icon.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "background_color",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "chat_icon": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Icon",
+                "dynamic": false,
+                "info": "The icon of the message.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "chat_icon",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "clean_data": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Basic Clean Data",
+                "dynamic": false,
+                "info": "Whether to clean the data",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "clean_data",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from collections.abc import Generator\nfrom typing import Any\n\nfrom langflow.base.io.chat import ChatComponent\nfrom langflow.inputs import BoolInput\nfrom langflow.inputs.inputs import HandleInput\nfrom langflow.io import DropdownInput, MessageTextInput, Output\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.schema.properties import Source\nfrom langflow.utils.constants import (\n    MESSAGE_SENDER_AI,\n    MESSAGE_SENDER_NAME_AI,\n    MESSAGE_SENDER_USER,\n)\n\n\nclass ChatOutput(ChatComponent):\n    display_name = \"Chat Output\"\n    description = \"Display a chat message in the Playground.\"\n    icon = \"MessagesSquare\"\n    name = \"ChatOutput\"\n    minimized = True\n\n    inputs = [\n        HandleInput(\n            name=\"input_value\",\n            display_name=\"Text\",\n            info=\"Message to be passed as output.\",\n            input_types=[\"Data\", \"DataFrame\", \"Message\"],\n            required=True,\n        ),\n        BoolInput(\n            name=\"should_store_message\",\n            display_name=\"Store Messages\",\n            info=\"Store the message in the history.\",\n            value=True,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER],\n            value=MESSAGE_SENDER_AI,\n            advanced=True,\n            info=\"Type of sender.\",\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Name of the sender.\",\n            value=MESSAGE_SENDER_NAME_AI,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"data_template\",\n            display_name=\"Data Template\",\n            value=\"{text}\",\n            advanced=True,\n            info=\"Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.\",\n        ),\n        MessageTextInput(\n            name=\"background_color\",\n            display_name=\"Background Color\",\n            info=\"The background color of the icon.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"chat_icon\",\n            display_name=\"Icon\",\n            info=\"The icon of the message.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"text_color\",\n            display_name=\"Text Color\",\n            info=\"The text color of the name\",\n            advanced=True,\n        ),\n        BoolInput(\n            name=\"clean_data\",\n            display_name=\"Basic Clean Data\",\n            value=True,\n            info=\"Whether to clean the data\",\n            advanced=True,\n        ),\n    ]\n    outputs = [\n        Output(\n            display_name=\"Message\",\n            name=\"message\",\n            method=\"message_response\",\n        ),\n    ]\n\n    def _build_source(self, id_: str | None, display_name: str | None, source: str | None) -> Source:\n        source_dict = {}\n        if id_:\n            source_dict[\"id\"] = id_\n        if display_name:\n            source_dict[\"display_name\"] = display_name\n        if source:\n            # Handle case where source is a ChatOpenAI object\n            if hasattr(source, \"model_name\"):\n                source_dict[\"source\"] = source.model_name\n            elif hasattr(source, \"model\"):\n                source_dict[\"source\"] = str(source.model)\n            else:\n                source_dict[\"source\"] = str(source)\n        return Source(**source_dict)\n\n    async def message_response(self) -> Message:\n        # First convert the input to string if needed\n        text = self.convert_to_string()\n        # Get source properties\n        source, icon, display_name, source_id = self.get_properties_from_source_component()\n        background_color = self.background_color\n        text_color = self.text_color\n        if self.chat_icon:\n            icon = self.chat_icon\n\n        # Create or use existing Message object\n        if isinstance(self.input_value, Message):\n            message = self.input_value\n            # Update message properties\n            message.text = text\n        else:\n            message = Message(text=text)\n\n        # Set message properties\n        message.sender = self.sender\n        message.sender_name = self.sender_name\n        message.session_id = self.session_id\n        message.flow_id = self.graph.flow_id if hasattr(self, \"graph\") else None\n        message.properties.source = self._build_source(source_id, display_name, source)\n        message.properties.icon = icon\n        message.properties.background_color = background_color\n        message.properties.text_color = text_color\n\n        # Store message if needed\n        if self.session_id and self.should_store_message:\n            stored_message = await self.send_message(message)\n            self.message.value = stored_message\n            message = stored_message\n\n        self.status = message\n        return message\n\n    def _validate_input(self) -> None:\n        \"\"\"Validate the input data and raise ValueError if invalid.\"\"\"\n        if self.input_value is None:\n            msg = \"Input data cannot be None\"\n            raise ValueError(msg)\n        if isinstance(self.input_value, list) and not all(\n            isinstance(item, Message | Data | DataFrame | str) for item in self.input_value\n        ):\n            invalid_types = [\n                type(item).__name__\n                for item in self.input_value\n                if not isinstance(item, Message | Data | DataFrame | str)\n            ]\n            msg = f\"Expected Data or DataFrame or Message or str, got {invalid_types}\"\n            raise TypeError(msg)\n        if not isinstance(\n            self.input_value,\n            Message | Data | DataFrame | str | list | Generator | type(None),\n        ):\n            type_name = type(self.input_value).__name__\n            msg = f\"Expected Data or DataFrame or Message or str, Generator or None, got {type_name}\"\n            raise TypeError(msg)\n\n    def _safe_convert(self, data: Any) -> str:\n        \"\"\"Safely convert input data to string.\"\"\"\n        try:\n            if isinstance(data, str):\n                return data\n            if isinstance(data, Message):\n                return data.get_text()\n            if isinstance(data, Data):\n                if data.get_text() is None:\n                    msg = \"Empty Data object\"\n                    raise ValueError(msg)\n                return data.get_text()\n            if isinstance(data, DataFrame):\n                if self.clean_data:\n                    # Remove empty rows\n                    data = data.dropna(how=\"all\")\n                    # Remove empty lines in each cell\n                    data = data.replace(r\"^\\s*$\", \"\", regex=True)\n                    # Replace multiple newlines with a single newline\n                    data = data.replace(r\"\\n+\", \"\\n\", regex=True)\n\n                # Replace pipe characters to avoid markdown table issues\n                processed_data = data.replace(r\"\\|\", r\"\\\\|\", regex=True)\n\n                processed_data = processed_data.map(\n                    lambda x: str(x).replace(\"\\n\", \"<br/>\") if isinstance(x, str) else x\n                )\n\n                return processed_data.to_markdown(index=False)\n            return str(data)\n        except (ValueError, TypeError, AttributeError) as e:\n            msg = f\"Error converting data: {e!s}\"\n            raise ValueError(msg) from e\n\n    def convert_to_string(self) -> str | Generator[Any, None, None]:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        self._validate_input()\n        if isinstance(self.input_value, list):\n            return \"\\n\".join([self._safe_convert(item) for item in self.input_value])\n        if isinstance(self.input_value, Generator):\n            return self.input_value\n        return self._safe_convert(self.input_value)\n"
+              },
+              "data_template": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Data Template",
+                "dynamic": false,
+                "info": "Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "data_template",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "{text}"
+              },
+              "input_value": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Text",
+                "dynamic": false,
+                "info": "Message to be passed as output.",
+                "input_types": [
+                  "Data",
+                  "DataFrame",
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_value",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "sender": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Sender Type",
+                "dynamic": false,
+                "info": "Type of sender.",
+                "name": "sender",
+                "options": [
+                  "Machine",
+                  "User"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Machine"
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "Name of the sender.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "AI"
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "should_store_message": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Store Messages",
+                "dynamic": false,
+                "info": "Store the message in the history.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "should_store_message",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "text_color": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Text Color",
+                "dynamic": false,
+                "info": "The text color of the name",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "text_color",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "ChatOutput"
+        },
+        "dragging": false,
+        "id": "ChatOutput-1dkx7",
+        "measured": {
+          "height": 191,
+          "width": 320
+        },
+        "position": {
+          "x": 3329.241774071398,
+          "y": 810.6314094989431
+        },
+        "selected": false,
+        "type": "genericNode"
+      }
+    ],
+    "viewport": {
+      "x": -2045.5197941495376,
+      "y": -467.7226922941892,
+      "zoom": 0.8091108421169524
+    }
+  },
+  "description": "Load your data for chat context with Retrieval Augmented Generation.",
+  "endpoint_name": null,
+  "folder_id": "34013cdd-e50f-46b8-9ac4-875131658ff7",
+  "fs_path": null,
+  "gradient": null,
+  "icon": null,
+  "icon_bg_color": null,
+  "id": "c84802f0-72a1-4ef6-9357-b9d2a78dd75f",
+  "is_component": false,
+  "locked": false,
+  "name": "SalerUploadFile",
+  "tags": [
+    "openai",
+    "astradb",
+    "rag",
+    "q-a"
+  ],
+  "updated_at": "2025-04-18T09:33:01+00:00",
+  "user_id": "b5aa971c-322c-476b-8846-6d1dc6bf00e3",
+  "webhook": false
+}

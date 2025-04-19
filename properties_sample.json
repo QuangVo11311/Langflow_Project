@@ -1,0 +1,156 @@
+[
+  {
+    "property_id": "p001",
+    "title": "Nhà phố Quận 7",
+    "description": "Nhà 2 tầng, có sân thượng, gần trường học.",
+    "price": 3200000000,
+    "location": "Quận 7, TP.HCM",
+    "features": ["sân thượng", "gần trường học"],
+    "contact": {
+      "name": "Nguyễn Văn A",
+      "phone": "0909123456",
+      "email": "a@gmail.com"
+    },
+    "created_at": "2025-04-16T10:15:00Z"
+  },
+  {
+    "property_id": "p002",
+    "title": "Căn hộ cao cấp Quận 2",
+    "description": "Căn hộ 3 phòng ngủ, view sông, nội thất cao cấp.",
+    "price": 4500000000,
+    "location": "Quận 2, TP.HCM",
+    "features": ["view sông", "3 phòng ngủ", "nội thất cao cấp"],
+    "contact": {
+      "name": "Trần Thị B",
+      "phone": "0912345678",
+      "email": "b@gmail.com"
+    },
+    "created_at": "2025-04-16T11:00:00Z"
+  },
+  {
+    "property_id": "p003",
+    "title": "Chung cư Bình Thạnh",
+    "description": "Chung cư 1 phòng ngủ, gần bến xe Miền Đông.",
+    "price": 1900000000,
+    "location": "Bình Thạnh, TP.HCM",
+    "features": ["gần bến xe", "1 phòng ngủ", "bảo vệ 24/7"],
+    "contact": {
+      "name": "Lê Văn C",
+      "phone": "0909988776",
+      "email": "c@gmail.com"
+    },
+    "created_at": "2025-04-15T17:45:00Z"
+  },
+  {
+    "property_id": "p004",
+    "title": "Nhà cấp 4 Tân Bình",
+    "description": "Nhà cấp 4 tiện xây mới, hẻm xe hơi.",
+    "price": 2500000000,
+    "location": "Tân Bình, TP.HCM",
+    "features": ["hẻm xe hơi", "tiện xây mới"],
+    "contact": {
+      "name": "Phạm Thị D",
+      "phone": "0933456789",
+      "email": "d@gmail.com"
+    },
+    "created_at": "2025-04-15T14:20:00Z"
+  },
+  {
+    "property_id": "p005",
+    "title": "Biệt thự Thảo Điền",
+    "description": "Biệt thự 2 tầng, hồ bơi riêng, sân vườn rộng.",
+    "price": 17000000000,
+    "location": "Thảo Điền, TP.Thủ Đức",
+    "features": ["hồ bơi", "sân vườn", "an ninh tốt"],
+    "contact": {
+      "name": "Ngô Văn E",
+      "phone": "0987654321",
+      "email": "e@gmail.com"
+    },
+    "created_at": "2025-04-14T09:00:00Z"
+  },
+  {
+    "property_id": "p006",
+    "title": "Căn hộ mini Gò Vấp",
+    "description": "Căn hộ nhỏ gọn, phù hợp người độc thân.",
+    "price": 1200000000,
+    "location": "Gò Vấp, TP.HCM",
+    "features": ["mini", "gần siêu thị", "1 phòng ngủ"],
+    "contact": {
+      "name": "Đặng Thị F",
+      "phone": "0911112233",
+      "email": "f@gmail.com"
+    },
+    "created_at": "2025-04-13T16:30:00Z"
+  },
+  {
+    "property_id": "p007",
+    "title": "Nhà mặt tiền Quận 10",
+    "description": "Nhà mặt tiền đường lớn, tiện kinh doanh.",
+    "price": 8900000000,
+    "location": "Quận 10, TP.HCM",
+    "features": ["mặt tiền", "kinh doanh tốt", "gần bệnh viện"],
+    "contact": {
+      "name": "Hoàng Văn G",
+      "phone": "0977223344",
+      "email": "g@gmail.com"
+    },
+    "created_at": "2025-04-12T13:10:00Z"
+  },
+  {
+    "property_id": "p008",
+    "title": "Nhà trọ Quận 3",
+    "description": "Dãy trọ 10 phòng đang cho thuê ổn định.",
+    "price": 5200000000,
+    "location": "Quận 3, TP.HCM",
+    "features": ["10 phòng", "đang cho thuê", "thu nhập ổn định"],
+    "contact": {
+      "name": "Trịnh Thị H",
+      "phone": "0966554433",
+      "email": "h@gmail.com"
+    },
+    "created_at": "2025-04-11T18:00:00Z"
+  },
+  {
+    "property_id": "p009",
+    "title": "Căn hộ Vinhomes Central Park",
+    "description": "2 phòng ngủ, tầng cao, view đẹp.",
+    "price": 5100000000,
+    "location": "Bình Thạnh, TP.HCM",
+    "features": ["tầng cao", "2 phòng ngủ", "gần Landmark 81"],
+    "contact": {
+      "name": "Nguyễn Thị I",
+      "phone": "0922334455",
+      "email": "i@gmail.com"
+    },
+    "created_at": "2025-04-10T10:45:00Z"
+  },
+  {
+    "property_id": "p010",
+    "title": "Nhà hẻm Quận 8",
+    "description": "Nhà hẻm yên tĩnh, thích hợp gia đình nhỏ.",
+    "price": 2100000000,
+    "location": "Quận 8, TP.HCM",
+    "features": ["hẻm yên tĩnh", "2 tầng", "gần chợ"],
+    "contact": {
+      "name": "Vũ Văn J",
+      "phone": "0933445566",
+      "email": "j@gmail.com"
+    },
+    "created_at": "2025-04-09T15:25:00Z"
+  },
+  {
+    "property_id": "p011",
+    "title": "Căn hộ DESTINO CENTRO",
+    "description": "Khu căn hộ phức hợp với quy mô hơn 2,1ha",
+    "price": 800000000,
+    "location": "Bến Lức, Long An",
+    "features": "Có công viên trung tâm, khu vui chơi, vườn thiền, đường chạy bộ, đài phun nước, khu BBQ, 3 hồ bơi người lớn và 1 hồ bơi trẻ em.",
+    "contact": {
+      "name": "Kim Yến",
+      "phone": "09087791176",
+      "email": "destinocentro@gmail.com"
+    },
+    "created_at": "2024-05-17 10:18:22"
+  }
+]
